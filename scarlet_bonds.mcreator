@@ -10,6 +10,17 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "TestProcedure2",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_procedure_2",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
