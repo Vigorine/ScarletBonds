@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:scarlet_bonds_demon"
+    },
+    "title": {
+      "translate": "advancements.apex_demon.title"
+    },
+    "description": {
+      "translate": "advancements.apex_demon.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "apex_demon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:twin_horned_demon"
+}

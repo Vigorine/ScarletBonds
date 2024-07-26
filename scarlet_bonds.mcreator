@@ -179,12 +179,49 @@
       "locked_code": false,
       "registry_name": "hunter_demon_ii",
       "path": "~/Advancements"
+    },
+    {
+      "name": "RavagerDemon",
+      "type": "achievement",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ravager_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "HornedDemon",
+      "type": "achievement",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horned_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "TwinHornedDemon",
+      "type": "achievement",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "twin_horned_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ApexDemon",
+      "type": "achievement",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apex_demon",
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.ravager_demon.title": "Ravager Demon",
       "advancements.thrall_demon_ii.title": "Thrall Demon II",
       "advancements.kanoto.title": "Kanoto",
       "advancements.thrall_demon.descr": "One of the 10 Demon Ranks",
@@ -192,6 +229,7 @@
       "advancements.thrall_demon.title": "Thrall Demon",
       "advancements.hinoe.descr": "One of the Demon Slayer Corps 10 Ranks",
       "advancements.feral_demon_ii.title": "Feral Demon II",
+      "advancements.ravager_demon.descr": "One of the 10 Demon Ranks",
       "advancements.mizunoe.descr": "One of the Demon Slayer Corps 10 Ranks",
       "advancements.feral_demon.descr": "One of the 10 Demon Ranks",
       "advancements.tsuchinoto.descr": "One of the Demon Slayer Corps 10 Ranks",
@@ -210,6 +248,7 @@
       "advancements.hinoto.title": "Hinoto",
       "advancements.kanoe.title": "Kanoe",
       "advancements.tsuchinoe.title": "Tsuchinoe",
+      "advancements.apex_demon.title": "Apex Demon",
       "advancements.welcome.descr": "Welcome to the Scarlet Bonds mod",
       "advancements.kinoto.title": "Kinoto",
       "advancements.hinoto.descr": "One of the Demon Slayer Corps 10 Ranks",
@@ -218,10 +257,15 @@
       "advancements.feral_demon_ii.descr": "One of the 10 Demon Ranks",
       "advancements.mizunoto.title": "Mizunoto",
       "advancements.kanoto.descr": "One of the Demon Slayer Corps 10 Ranks",
+      "advancements.apex_demon.descr": "One of the 10 Demon Ranks",
       "advancements.thrall_demon_ii.descr": "One of the 10 Demon Ranks",
+      "advancements.twin_horned_demon.title": "Twin Horned Demon",
+      "advancements.horned_demon.title": "Horned Demon",
       "item.scarlet_bonds.scarlet_bonds_logo": "Scarlet Bonds Logo",
       "advancements.hunter_demon_ii.title": "Hunter Demon II",
-      "advancements.hunter_demon_ii.descr": "One of the 10 Demon Ranks"
+      "advancements.twin_horned_demon.descr": "One of the 10 Demon Ranks",
+      "advancements.hunter_demon_ii.descr": "One of the 10 Demon Ranks",
+      "advancements.horned_demon.descr": "One of the 10 Demon Ranks"
     }
   },
   "foldersRoot": {
