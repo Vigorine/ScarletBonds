@@ -2,8 +2,8 @@
   "_fv": 34,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Mizunoto",
-    "achievementDescription": "One of the Demon Corps 10 Ranks",
+    "achievementName": "Mizunoe",
+    "achievementDescription": "One of the Demon Slayer Corps 10 Ranks",
     "achievementIcon": {
       "value": "CUSTOM:ScarletBondsSlayerUniform"
     },
@@ -20,6 +20,6 @@
     "parent": {
       "value": "CUSTOM:Mizunoto"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"63\" y=\"104\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"51\" y=\"100\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

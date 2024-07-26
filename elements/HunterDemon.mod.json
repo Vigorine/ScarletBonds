@@ -2,7 +2,7 @@
   "_fv": 34,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Thrall Demon",
+    "achievementName": "Hunter Demon",
     "achievementDescription": "One of the 10 Demon Ranks",
     "achievementIcon": {
       "value": "CUSTOM:ScarletBondsDemon"
@@ -20,6 +20,6 @@
     "parent": {
       "value": "CUSTOM:FeralDemonII"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"58\" y=\"165\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"51\" y=\"62\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

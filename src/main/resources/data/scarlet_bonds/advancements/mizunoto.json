@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:scarlet_bonds"
+  "parent": "scarlet_bonds:welcome"
 }

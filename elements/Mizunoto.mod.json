@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Mizunoto",
-    "achievementDescription": "One of the Demon Corps 10 Ranks",
+    "achievementDescription": "One of the Demon Slayer Corps 10 Ranks",
     "achievementIcon": {
       "value": "CUSTOM:ScarletBondsSlayerUniform"
     },
@@ -18,8 +18,8 @@
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:ScarletBonds"
+      "value": "CUSTOM:Welcome"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"63\" y=\"104\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"75\" y=\"131\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }
