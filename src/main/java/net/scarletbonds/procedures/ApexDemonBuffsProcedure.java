@@ -112,6 +112,13 @@ public class ApexDemonBuffsProcedure {
 							"effect give @s kimetsunoyaiba:demon 999999 20");
 				}
 			}
+			{
+				Entity _ent = entity;
+				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+							"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0");
+				}
+			}
 		}
 	}
 }
