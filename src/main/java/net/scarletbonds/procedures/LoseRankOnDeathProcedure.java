@@ -40,52 +40,61 @@ public class LoseRankOnDeathProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		{
+			Entity _ent = entity;
+			if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+				_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+						"/say hello");
+			}
+		}
 		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-								.getAdvancement(new ResourceLocation("scarlet_bonds:mizunoe")))
+								.getAdvancement(new ResourceLocation("scarlet_bonds:kinoe")))
 						.isDone()
 				: false) {
 			{
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"/advancement revoke @s scarlet_bonds:mizunoe");
+							"/advancement revoke @s only scarlet_bonds:kinoe");
 				}
 			}
 			{
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"/advancement grant @s scarlet_bonds:mizunoto ");
+							"/advancement grant @s only scarlet_bonds:hinoto ");
 				}
 			}
 		} else {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:kanoto")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:kinoto")))
 							.isDone()
 					: false) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "/advancement revoke @s scarlet_bonds:kanoto");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/advancement revoke @s only scarlet_bonds:kinoto");
 					}
 				}
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "/advancement grant @s scarlet_bonds:mizunoe");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/advancement grant @s only scarlet_bonds:hinoe ");
 					}
 				}
 			} else {
 				if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 						? ((ServerPlayerEntity) entity).getAdvancements()
 								.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-										.getAdvancement(new ResourceLocation("scarlet_bonds:kanoe")))
+										.getAdvancement(new ResourceLocation("scarlet_bonds:hinoe")))
 								.isDone()
 						: false) {
 					{
@@ -93,7 +102,7 @@ public class LoseRankOnDeathProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/advancement revoke @s scarlet_bonds:kanoe");
+									"/advancement revoke @s only scarlet_bonds:hinoe");
 						}
 					}
 					{
@@ -101,14 +110,14 @@ public class LoseRankOnDeathProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/advancement grant @s scarlet_bonds:kanoto ");
+									"/advancement grant @s only scarlet_bonds:hinoto ");
 						}
 					}
 				} else {
 					if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 							? ((ServerPlayerEntity) entity).getAdvancements()
 									.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-											.getAdvancement(new ResourceLocation("scarlet_bonds:tsuchinoto")))
+											.getAdvancement(new ResourceLocation("scarlet_bonds:hinoto")))
 									.isDone()
 							: false) {
 						{
@@ -116,7 +125,7 @@ public class LoseRankOnDeathProcedure {
 							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 								_ent.world.getServer().getCommandManager().handleCommand(
 										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-										"/advancement revoke @s scarlet_bonds:tsuchinoto");
+										"/advancement revoke @s only scarlet_bonds:hinoto");
 							}
 						}
 						{
@@ -124,9 +133,10 @@ public class LoseRankOnDeathProcedure {
 							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 								_ent.world.getServer().getCommandManager().handleCommand(
 										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-										"/advancement grant @s scarlet_bonds:tsuchinoe ");
+										"/advancement grant @s only scarlet_bonds:tsuchinoe");
 							}
 						}
+					} else {
 						if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 								? ((ServerPlayerEntity) entity).getAdvancements()
 										.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -138,7 +148,7 @@ public class LoseRankOnDeathProcedure {
 								if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 									_ent.world.getServer().getCommandManager().handleCommand(
 											_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-											"/advancement revoke @s scarlet_bonds:tsuchinoe");
+											"/advancement revoke @s only scarlet_bonds:tsuchinoe");
 								}
 							}
 							{
@@ -146,14 +156,14 @@ public class LoseRankOnDeathProcedure {
 								if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 									_ent.world.getServer().getCommandManager().handleCommand(
 											_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-											"/advancement grant @s scarlet_bonds:tsuchinoto ");
+											"/advancement grant @s only scarlet_bonds:tsuchinoto ");
 								}
 							}
 						} else {
 							if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 									? ((ServerPlayerEntity) entity).getAdvancements()
 											.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-													.getAdvancement(new ResourceLocation("scarlet_bonds:hinoto")))
+													.getAdvancement(new ResourceLocation("scarlet_bonds:tsuchinoto")))
 											.isDone()
 									: false) {
 								{
@@ -161,7 +171,7 @@ public class LoseRankOnDeathProcedure {
 									if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 										_ent.world.getServer().getCommandManager().handleCommand(
 												_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-												"/advancement revoke @s scarlet_bonds:hinoto");
+												"/advancement revoke @s only scarlet_bonds:tsuchinoto");
 									}
 								}
 								{
@@ -169,14 +179,14 @@ public class LoseRankOnDeathProcedure {
 									if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 										_ent.world.getServer().getCommandManager().handleCommand(
 												_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-												"/advancement grant @s scarlet_bonds:tsuchinoe");
+												"/advancement grant @s only scarlet_bonds:tsuchinoe ");
 									}
 								}
 							} else {
 								if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 										? ((ServerPlayerEntity) entity).getAdvancements()
 												.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-														.getAdvancement(new ResourceLocation("scarlet_bonds:hinoe")))
+														.getAdvancement(new ResourceLocation("scarlet_bonds:kanoe")))
 												.isDone()
 										: false) {
 									{
@@ -184,7 +194,7 @@ public class LoseRankOnDeathProcedure {
 										if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 											_ent.world.getServer().getCommandManager().handleCommand(
 													_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-													"/advancement revoke @s scarlet_bonds:hinoe");
+													"/advancement revoke @s only scarlet_bonds:kanoe");
 										}
 									}
 									{
@@ -192,14 +202,14 @@ public class LoseRankOnDeathProcedure {
 										if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 											_ent.world.getServer().getCommandManager().handleCommand(
 													_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-													"/advancement grant @s scarlet_bonds:hinoto ");
+													"/advancement grant @s only scarlet_bonds:kanoto ");
 										}
 									}
 								} else {
 									if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 											? ((ServerPlayerEntity) entity).getAdvancements()
 													.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-															.getAdvancement(new ResourceLocation("scarlet_bonds:kinoto")))
+															.getAdvancement(new ResourceLocation("scarlet_bonds:kanoto")))
 													.isDone()
 											: false) {
 										{
@@ -207,7 +217,7 @@ public class LoseRankOnDeathProcedure {
 											if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 												_ent.world.getServer().getCommandManager().handleCommand(
 														_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-														"/advancement revoke @s scarlet_bonds:kinoto");
+														"/advancement revoke @s only scarlet_bonds:kanoto");
 											}
 										}
 										{
@@ -215,14 +225,14 @@ public class LoseRankOnDeathProcedure {
 											if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 												_ent.world.getServer().getCommandManager().handleCommand(
 														_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-														"/advancement grant @s scarlet_bonds:hinoe ");
+														"/advancement grant @s only scarlet_bonds:mizunoe");
 											}
 										}
 									} else {
 										if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 												? ((ServerPlayerEntity) entity).getAdvancements()
 														.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-																.getAdvancement(new ResourceLocation("scarlet_bonds:kinoe")))
+																.getAdvancement(new ResourceLocation("scarlet_bonds:mizunoe")))
 														.isDone()
 												: false) {
 											{
@@ -230,7 +240,7 @@ public class LoseRankOnDeathProcedure {
 												if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 													_ent.world.getServer().getCommandManager().handleCommand(
 															_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-															"/advancement revoke @s scarlet_bonds:kinoe");
+															"/advancement revoke @s only scarlet_bonds:mizunoe");
 												}
 											}
 											{
@@ -238,7 +248,7 @@ public class LoseRankOnDeathProcedure {
 												if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 													_ent.world.getServer().getCommandManager().handleCommand(
 															_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-															"/advancement grant @s scarlet_bonds:hinoto ");
+															"/advancement grant @s only scarlet_bonds:mizunoto ");
 												}
 											}
 										} else {
@@ -246,7 +256,7 @@ public class LoseRankOnDeathProcedure {
 													? ((ServerPlayerEntity) entity).getAdvancements()
 															.getProgress(
 																	((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-																			.getAdvancement(new ResourceLocation("scarlet_bonds:thrall_demon_ii")))
+																			.getAdvancement(new ResourceLocation("scarlet_bonds:apex_demon")))
 															.isDone()
 													: false) {
 												{
@@ -254,7 +264,7 @@ public class LoseRankOnDeathProcedure {
 													if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 														_ent.world.getServer().getCommandManager().handleCommand(
 																_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																"/advancement revoke @s scarlet_bonds:thrall_demon_ii");
+																"/advancement revoke @s only scarlet_bonds:apex_demon");
 													}
 												}
 												{
@@ -262,7 +272,7 @@ public class LoseRankOnDeathProcedure {
 													if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 														_ent.world.getServer().getCommandManager().handleCommand(
 																_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																"/advancement grant @s scarlet_bonds:thrall_demon ");
+																"/advancement grant @s only scarlet_bonds:twin_horned_demon");
 													}
 												}
 											} else {
@@ -270,7 +280,7 @@ public class LoseRankOnDeathProcedure {
 														? ((ServerPlayerEntity) entity).getAdvancements()
 																.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server)
 																		.getAdvancementManager()
-																		.getAdvancement(new ResourceLocation("scarlet_bonds:feral_demon")))
+																		.getAdvancement(new ResourceLocation("scarlet_bonds:twin_horned_demon")))
 																.isDone()
 														: false) {
 													{
@@ -278,7 +288,7 @@ public class LoseRankOnDeathProcedure {
 														if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 															_ent.world.getServer().getCommandManager().handleCommand(
 																	_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																	"/advancement revoke @s scarlet_bonds:feral_demon");
+																	"/advancement revoke @s only scarlet_bonds:twin_horned_demon");
 														}
 													}
 													{
@@ -286,14 +296,15 @@ public class LoseRankOnDeathProcedure {
 														if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 															_ent.world.getServer().getCommandManager().handleCommand(
 																	_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																	"/advancement grant @s scarlet_bonds:thrall_demon_ii ");
+																	"/advancement grant @s only scarlet_bonds:horned_demon");
 														}
 													}
+												} else {
 													if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 															? ((ServerPlayerEntity) entity).getAdvancements()
 																	.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server)
 																			.getAdvancementManager()
-																			.getAdvancement(new ResourceLocation("scarlet_bonds:feral_demon_ii")))
+																			.getAdvancement(new ResourceLocation("scarlet_bonds:horned_demon")))
 																	.isDone()
 															: false) {
 														{
@@ -301,7 +312,7 @@ public class LoseRankOnDeathProcedure {
 															if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 																_ent.world.getServer().getCommandManager().handleCommand(
 																		_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																		"/advancement revoke @s scarlet_bonds:feral_demon_ii");
+																		"/advancement revoke @s only scarlet_bonds:horned_demon");
 															}
 														}
 														{
@@ -309,7 +320,7 @@ public class LoseRankOnDeathProcedure {
 															if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 																_ent.world.getServer().getCommandManager().handleCommand(
 																		_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																		"/advancement grant @s scarlet_bonds:feral_demon");
+																		"/advancement grant @s only scarlet_bonds:ravager_demon");
 															}
 														}
 													} else {
@@ -317,7 +328,7 @@ public class LoseRankOnDeathProcedure {
 																? ((ServerPlayerEntity) entity).getAdvancements()
 																		.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server)
 																				.getAdvancementManager()
-																				.getAdvancement(new ResourceLocation("scarlet_bonds:hunter_demon")))
+																				.getAdvancement(new ResourceLocation("scarlet_bonds:ravager_demon")))
 																		.isDone()
 																: false) {
 															{
@@ -325,7 +336,7 @@ public class LoseRankOnDeathProcedure {
 																if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 																	_ent.world.getServer().getCommandManager().handleCommand(
 																			_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																			"/advancement revoke @s scarlet_bonds:hunter_demon");
+																			"/advancement revoke @s only scarlet_bonds:ravager_demon");
 																}
 															}
 															{
@@ -333,7 +344,7 @@ public class LoseRankOnDeathProcedure {
 																if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 																	_ent.world.getServer().getCommandManager().handleCommand(
 																			_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																			"/advancement grant @s scarlet_bonds:feral_demon_ii ");
+																			"/advancement grant @s only scarlet_bonds:hunter_demon_ii ");
 																}
 															}
 														} else {
@@ -349,7 +360,7 @@ public class LoseRankOnDeathProcedure {
 																	if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 																		_ent.world.getServer().getCommandManager().handleCommand(
 																				_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																				"/advancement revoke @s scarlet_bonds:hunter_demon_ii");
+																				"/advancement revoke @s only scarlet_bonds:hunter_demon_ii");
 																	}
 																}
 																{
@@ -357,7 +368,7 @@ public class LoseRankOnDeathProcedure {
 																	if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 																		_ent.world.getServer().getCommandManager().handleCommand(
 																				_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																				"/advancement grant @s scarlet_bonds:hunter_demon ");
+																				"/advancement grant @s only scarlet_bonds:hunter_demon ");
 																	}
 																}
 															} else {
@@ -365,7 +376,7 @@ public class LoseRankOnDeathProcedure {
 																		? ((ServerPlayerEntity) entity).getAdvancements()
 																				.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server)
 																						.getAdvancementManager().getAdvancement(
-																								new ResourceLocation("scarlet_bonds:ravager_demon")))
+																								new ResourceLocation("scarlet_bonds:hunter_demon")))
 																				.isDone()
 																		: false) {
 																	{
@@ -374,7 +385,7 @@ public class LoseRankOnDeathProcedure {
 																			_ent.world.getServer().getCommandManager().handleCommand(
 																					_ent.getCommandSource().withFeedbackDisabled()
 																							.withPermissionLevel(4),
-																					"/advancement revoke @s scarlet_bonds:ravager_demon");
+																					"/advancement revoke @s only scarlet_bonds:hunter_demon");
 																		}
 																	}
 																	{
@@ -383,7 +394,7 @@ public class LoseRankOnDeathProcedure {
 																			_ent.world.getServer().getCommandManager().handleCommand(
 																					_ent.getCommandSource().withFeedbackDisabled()
 																							.withPermissionLevel(4),
-																					"/advancement grant @s scarlet_bonds:hunter_demon_ii ");
+																					"/advancement grant @s only scarlet_bonds:feral_demon_ii ");
 																		}
 																	}
 																} else {
@@ -393,7 +404,7 @@ public class LoseRankOnDeathProcedure {
 																							((MinecraftServer) ((ServerPlayerEntity) entity).server)
 																									.getAdvancementManager()
 																									.getAdvancement(new ResourceLocation(
-																											"scarlet_bonds:horned_demon")))
+																											"scarlet_bonds:feral_demon_ii")))
 																							.isDone()
 																					: false) {
 																		{
@@ -402,7 +413,7 @@ public class LoseRankOnDeathProcedure {
 																				_ent.world.getServer().getCommandManager().handleCommand(
 																						_ent.getCommandSource().withFeedbackDisabled()
 																								.withPermissionLevel(4),
-																						"/advancement revoke @s scarlet_bonds:horned_demon");
+																						"/advancement revoke @s only scarlet_bonds:feral_demon_ii");
 																			}
 																		}
 																		{
@@ -411,7 +422,7 @@ public class LoseRankOnDeathProcedure {
 																				_ent.world.getServer().getCommandManager().handleCommand(
 																						_ent.getCommandSource().withFeedbackDisabled()
 																								.withPermissionLevel(4),
-																						"/advancement grant @s scarlet_bonds:ravager_demon");
+																						"/advancement grant @s only scarlet_bonds:feral_demon");
 																			}
 																		}
 																	} else {
@@ -421,7 +432,7 @@ public class LoseRankOnDeathProcedure {
 																								((MinecraftServer) ((ServerPlayerEntity) entity).server)
 																										.getAdvancementManager()
 																										.getAdvancement(new ResourceLocation(
-																												"scarlet_bonds:twin_horned_demon")))
+																												"scarlet_bonds:feral_demon")))
 																								.isDone()
 																						: false) {
 																			{
@@ -430,7 +441,7 @@ public class LoseRankOnDeathProcedure {
 																					_ent.world.getServer().getCommandManager().handleCommand(
 																							_ent.getCommandSource().withFeedbackDisabled()
 																									.withPermissionLevel(4),
-																							"/advancement revoke @s scarlet_bonds:twin_horned_demon");
+																							"/advancement revoke @s only scarlet_bonds:feral_demon");
 																				}
 																			}
 																			{
@@ -439,7 +450,7 @@ public class LoseRankOnDeathProcedure {
 																					_ent.world.getServer().getCommandManager().handleCommand(
 																							_ent.getCommandSource().withFeedbackDisabled()
 																									.withPermissionLevel(4),
-																							"/advancement grant @s scarlet_bonds:horned_demon");
+																							"/advancement grant @s only scarlet_bonds:thrall_demon_ii ");
 																				}
 																			}
 																		} else {
@@ -451,7 +462,7 @@ public class LoseRankOnDeathProcedure {
 																													.getAdvancementManager()
 																													.getAdvancement(
 																															new ResourceLocation(
-																																	"scarlet_bonds:apex_demon")))
+																																	"scarlet_bonds:thrall_demon_ii")))
 																									.isDone()
 																							: false) {
 																				{
@@ -460,7 +471,7 @@ public class LoseRankOnDeathProcedure {
 																						_ent.world.getServer().getCommandManager().handleCommand(
 																								_ent.getCommandSource().withFeedbackDisabled()
 																										.withPermissionLevel(4),
-																								"/advancement revoke @s scarlet_bonds:apex_demon");
+																								"/advancement revoke @s only scarlet_bonds:thrall_demon_ii");
 																					}
 																				}
 																				{
@@ -469,7 +480,7 @@ public class LoseRankOnDeathProcedure {
 																						_ent.world.getServer().getCommandManager().handleCommand(
 																								_ent.getCommandSource().withFeedbackDisabled()
 																										.withPermissionLevel(4),
-																								"/advancement grant @s scarlet_bonds:twin_horned_demon");
+																								"/advancement grant @s only scarlet_bonds:thrall_demon ");
 																					}
 																				}
 																			}
