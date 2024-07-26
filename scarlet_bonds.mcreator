@@ -245,6 +245,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -262,6 +266,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -279,6 +287,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -296,6 +308,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -313,6 +329,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -330,6 +350,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -347,6 +371,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -364,6 +392,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -381,30 +413,24 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "GrantBuffs",
-      "type": "procedure",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grant_buffs",
-      "metadata": {
-        "dependencies": [
+          },
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/Procedures"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "global_ticks",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {

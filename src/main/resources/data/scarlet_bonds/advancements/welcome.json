@@ -5,10 +5,10 @@
       "item": "scarlet_bonds:scarlet_bonds_logo"
     },
     "title": {
-      "translate": "advancements.welcome.title"
+      "translate": "advancements.scarlet_bonds.title"
     },
     "description": {
-      "translate": "advancements.welcome.descr"
+      "translate": "advancements.scarlet_bonds.descr"
     },
     "frame": "task",
     "show_toast": true,
