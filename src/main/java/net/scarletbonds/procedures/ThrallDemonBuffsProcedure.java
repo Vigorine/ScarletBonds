@@ -16,7 +16,7 @@ import net.minecraft.entity.Entity;
 import java.util.Map;
 import java.util.HashMap;
 
-public class KinotoBuffsProcedure {
+public class ThrallDemonBuffsProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -42,14 +42,14 @@ public class KinotoBuffsProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure KinotoBuffs!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure ThrallDemonBuffs!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-								.getAdvancement(new ResourceLocation("scarlet_bonds:kinoto")))
+								.getAdvancement(new ResourceLocation("scarlet_bonds:thrall_demon")))
 						.isDone()
 				: false) {
 			if (entity.isSprinting()) {
@@ -57,7 +57,7 @@ public class KinotoBuffsProcedure {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:speed 999999 8");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:speed 999999 2");
 					}
 				}
 				{
@@ -65,7 +65,7 @@ public class KinotoBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:jump_boost 999999 3");
+								"effect give @s minecraft:jump_boost 999999 2");
 					}
 				}
 			} else {
@@ -88,7 +88,7 @@ public class KinotoBuffsProcedure {
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"effect give @s minecraft:strength 999999 15");
+							"effect give @s minecraft:strength 999999 6");
 				}
 			}
 			{
@@ -102,21 +102,14 @@ public class KinotoBuffsProcedure {
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"effect give @s minecraft:night_vision 999999 1");
+							"effect give @s minecraft:health_boost 999999 23");
 				}
 			}
 			{
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"effect give @s minecraft:health_boost 999999 28");
-				}
-			}
-			{
-				Entity _ent = entity;
-				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"effect give @s kimetsunoyaiba:potions_demon_slayer_mark 999999 0");
+							"effect give @s kimetsunoyaiba:demon 999999 2");
 				}
 			}
 		}

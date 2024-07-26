@@ -57,14 +57,14 @@ public class HinoeBuffsProcedure {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:speed 99999 8");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:speed 99999 7");
 					}
 				}
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:jump_boost 99999 4");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:jump_boost 99999 3");
 					}
 				}
 			} else {
@@ -116,30 +116,6 @@ public class HinoeBuffsProcedure {
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
 							"effect give @s kimetsunoyaiba:potions_demon_slayer_mark 999999 0");
-				}
-			}
-		}
-		if (!entity.isAlive()) {
-			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
-					? ((ServerPlayerEntity) entity).getAdvancements()
-							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:hinoe")))
-							.isDone()
-					: false) {
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"advancement grant @s only scarlet_bonds:hinoto");
-					}
-				}
-			}
-			{
-				Entity _ent = entity;
-				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"advancement revoke @s only scarlet_bonds:hinoe");
 				}
 			}
 		}

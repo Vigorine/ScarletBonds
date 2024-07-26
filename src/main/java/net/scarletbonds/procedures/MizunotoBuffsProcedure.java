@@ -57,7 +57,7 @@ public class MizunotoBuffsProcedure {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:speed 999999 2");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:speed 999999 1");
 					}
 				}
 				{
@@ -65,7 +65,7 @@ public class MizunotoBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:jump_boost 999999 3");
+								"effect give @s minecraft:jump_boost 999999 2");
 					}
 				}
 			} else {
