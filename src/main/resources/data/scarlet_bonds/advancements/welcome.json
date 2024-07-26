@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
+    "background": "minecraft:textures/block/gilded_blackstone.png",
     "icon": {
       "item": "scarlet_bonds:scarlet_bonds_logo"
     },
