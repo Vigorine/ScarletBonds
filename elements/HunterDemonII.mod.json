@@ -5,7 +5,7 @@
     "achievementName": "Thrall Demon",
     "achievementDescription": "One of the 10 Demon Ranks",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsLogo"
+      "value": "CUSTOM:ScarletBondsDemon"
     },
     "background": "Default",
     "disableDisplay": false,

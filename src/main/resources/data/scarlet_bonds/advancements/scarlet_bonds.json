@@ -17,7 +17,7 @@
   },
   "criteria": {
     "scarlet_bonds": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:tick"
     }
   }
 }
