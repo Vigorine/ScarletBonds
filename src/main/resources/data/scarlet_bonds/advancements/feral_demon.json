@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:scarlet_bonds_logo"
+    },
+    "title": {
+      "translate": "advancements.feral_demon.title"
+    },
+    "description": {
+      "translate": "advancements.feral_demon.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "feral_demon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:thrall_demon_ii"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "scarlet_bonds:scarlet_bonds_logo"
+    },
+    "title": {
+      "translate": "advancements.scarlet_bonds.title"
+    },
+    "description": {
+      "translate": "advancements.scarlet_bonds.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "scarlet_bonds": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,36 +1,285 @@
 {
   "mod_elements": [
     {
-      "name": "TestProcedure",
-      "type": "procedure",
+      "name": "ScarletBondsSlayerUniform",
+      "type": "item",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test_procedure",
-      "metadata": {
-        "dependencies": []
-      }
+      "registry_name": "scarlet_bonds_slayer_uniform",
+      "path": "~/Items"
     },
     {
-      "name": "TestProcedure2",
-      "type": "procedure",
+      "name": "Mizunoto",
+      "type": "achievement",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test_procedure_2",
-      "metadata": {
-        "dependencies": []
-      }
+      "registry_name": "mizunoto",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Mizunoe",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mizunoe",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Kanoto",
+      "type": "achievement",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kanoto",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Kanoe",
+      "type": "achievement",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kanoe",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Tsuchinoto",
+      "type": "achievement",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tsuchinoto",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Tsuchinoe",
+      "type": "achievement",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tsuchinoe",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Hinoto",
+      "type": "achievement",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hinoto",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Hinoe",
+      "type": "achievement",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hinoe",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Kinoto",
+      "type": "achievement",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kinoto",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Kinoe",
+      "type": "achievement",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kinoe",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ScarletBondsDemon",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scarlet_bonds_demon",
+      "path": "~/Items"
+    },
+    {
+      "name": "ScarletBondsLogo",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scarlet_bonds_logo",
+      "path": "~/Items"
+    },
+    {
+      "name": "ScarletBonds",
+      "type": "achievement",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scarlet_bonds",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ThrallDemon",
+      "type": "achievement",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thrall_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ThrallDemonII",
+      "type": "achievement",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thrall_demon_ii",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FeralDemon",
+      "type": "achievement",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feral_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FeralDemonII",
+      "type": "achievement",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feral_demon_ii",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "HunterDemon",
+      "type": "achievement",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "HunterDemonII",
+      "type": "achievement",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_demon_ii",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "RavagerDemon",
+      "type": "achievement",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ravager_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "HornedDemon",
+      "type": "achievement",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horned_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "TwinHornedDemon",
+      "type": "achievement",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "twin_horned_demon",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ApexDemon",
+      "type": "achievement",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apex_demon",
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "advancements.ravager_demon.title": "Thrall Demon",
+      "advancements.thrall_demon_ii.title": "Thrall Demon",
+      "advancements.kanoto.title": "Mizunoto",
+      "advancements.thrall_demon.descr": "One of the 10 Demon Ranks",
+      "advancements.hinoe.title": "Mizunoto",
+      "advancements.thrall_demon.title": "Thrall Demon",
+      "advancements.hinoe.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.feral_demon_ii.title": "Thrall Demon",
+      "advancements.ravager_demon.descr": "One of the 10 Demon Ranks",
+      "advancements.mizunoe.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.feral_demon.descr": "One of the 10 Demon Ranks",
+      "advancements.tsuchinoto.descr": "One of the Demon Corps 10 Ranks",
+      "item.scarlet_bonds.scarlet_bonds_demon": "Scarlet Bonds Demon",
+      "item.scarlet_bonds.scarlet_bonds_slayer_uniform": "Scarlet Bonds Slayer Uniform",
+      "advancements.kanoe.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.tsuchinoe.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.mizunoto.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.tsuchinoto.title": "Mizunoto",
+      "advancements.kinoe.title": "Mizunoto",
+      "advancements.hunter_demon.title": "Thrall Demon",
+      "advancements.scarlet_bonds.title": "Scarlet Bonds",
+      "advancements.hunter_demon.descr": "One of the 10 Demon Ranks",
+      "advancements.kinoto.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.kinoe.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.scarlet_bonds.descr": "Welcome to the Scarlet Bonds mod!",
+      "advancements.hinoto.title": "Mizunoto",
+      "advancements.kanoe.title": "Mizunoto",
+      "advancements.tsuchinoe.title": "Mizunoto",
+      "advancements.apex_demon.title": "Thrall Demon",
+      "advancements.kinoto.title": "Mizunoto",
+      "advancements.hinoto.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.feral_demon.title": "Thrall Demon",
+      "advancements.mizunoe.title": "Mizunoto",
+      "advancements.feral_demon_ii.descr": "One of the 10 Demon Ranks",
+      "advancements.kanoto.descr": "One of the Demon Corps 10 Ranks",
+      "advancements.mizunoto.title": "Mizunoto",
+      "advancements.apex_demon.descr": "One of the 10 Demon Ranks",
+      "advancements.thrall_demon_ii.descr": "One of the 10 Demon Ranks",
+      "advancements.twin_horned_demon.title": "Thrall Demon",
+      "advancements.horned_demon.title": "Thrall Demon",
+      "item.scarlet_bonds.scarlet_bonds_logo": "Scarlet Bonds Logo",
+      "advancements.hunter_demon_ii.title": "Thrall Demon",
+      "advancements.twin_horned_demon.descr": "One of the 10 Demon Ranks",
+      "advancements.hunter_demon_ii.descr": "One of the 10 Demon Ranks",
+      "advancements.horned_demon.descr": "One of the 10 Demon Ranks"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "scarlet_bonds",

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:scarlet_bonds_logo"
+    },
+    "title": {
+      "translate": "advancements.twin_horned_demon.title"
+    },
+    "description": {
+      "translate": "advancements.twin_horned_demon.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "twin_horned_demon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:horned_demon"
+}

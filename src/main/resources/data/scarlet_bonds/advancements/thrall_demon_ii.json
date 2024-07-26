@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:scarlet_bonds_logo"
+    },
+    "title": {
+      "translate": "advancements.thrall_demon_ii.title"
+    },
+    "description": {
+      "translate": "advancements.thrall_demon_ii.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thrall_demon_ii": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:thrall_demon"
+}

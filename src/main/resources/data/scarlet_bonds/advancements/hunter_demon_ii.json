@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:scarlet_bonds_logo"
+    },
+    "title": {
+      "translate": "advancements.hunter_demon_ii.title"
+    },
+    "description": {
+      "translate": "advancements.hunter_demon_ii.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hunter_demon_ii": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:hunter_demon"
+}

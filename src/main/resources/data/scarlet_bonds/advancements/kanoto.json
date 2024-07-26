@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:scarlet_bonds_slayer_uniform"
+    },
+    "title": {
+      "translate": "advancements.kanoto.title"
+    },
+    "description": {
+      "translate": "advancements.kanoto.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kanoto": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:mizunoe"
+}
