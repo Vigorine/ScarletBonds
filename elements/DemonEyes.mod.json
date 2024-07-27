@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "uniform",
+    "texture": "demon",
     "customModelName": "Normal",
-    "name": "Scarlet Bonds Slayer Uniform",
+    "name": "Demon Eyes",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

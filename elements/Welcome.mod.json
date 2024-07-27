@@ -5,7 +5,7 @@
     "achievementName": "Scarlet Bonds",
     "achievementDescription": "Welcome to the Scarlet Bonds mod",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsLogo"
+      "value": "CUSTOM:Logo"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -5,7 +5,7 @@
     "achievementName": "Feral Demon II",
     "achievementDescription": "One of the 10 Demon Ranks",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:HandDemon"
     },
     "background": "Default",
     "disableDisplay": false,

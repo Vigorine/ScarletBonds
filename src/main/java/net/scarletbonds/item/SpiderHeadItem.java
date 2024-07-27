@@ -12,12 +12,12 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 @ScarletBondsModElements.ModElement.Tag
-public class ScarletBondsDemonItem extends ScarletBondsModElements.ModElement {
-	@ObjectHolder("scarlet_bonds:scarlet_bonds_demon")
+public class SpiderHeadItem extends ScarletBondsModElements.ModElement {
+	@ObjectHolder("scarlet_bonds:spider_head")
 	public static final Item block = null;
 
-	public ScarletBondsDemonItem(ScarletBondsModElements instance) {
-		super(instance, 12);
+	public SpiderHeadItem(ScarletBondsModElements instance) {
+		super(instance, 62);
 	}
 
 	@Override
@@ -28,7 +28,7 @@ public class ScarletBondsDemonItem extends ScarletBondsModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("scarlet_bonds_demon");
+			setRegistryName("spider_head");
 		}
 
 		@Override

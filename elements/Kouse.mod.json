@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "scarlet_bonds",
+    "texture": "kouse",
     "customModelName": "Normal",
-    "name": "Scarlet Bonds Logo",
+    "name": "Kouse",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

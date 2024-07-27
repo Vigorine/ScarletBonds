@@ -2,13 +2,13 @@
   "display": {
     "background": "minecraft:textures/block/gilded_blackstone.png",
     "icon": {
-      "item": "scarlet_bonds:scarlet_bonds_logo"
+      "item": "scarlet_bonds:logo"
     },
     "title": {
-      "translate": "advancements.scarlet_bonds.title"
+      "translate": "advancements.welcome.title"
     },
     "description": {
-      "translate": "advancements.scarlet_bonds.descr"
+      "translate": "advancements.welcome.descr"
     },
     "frame": "task",
     "show_toast": true,

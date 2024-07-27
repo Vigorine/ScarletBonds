@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "demon",
+    "texture": "icon_sabito_mask",
     "customModelName": "Normal",
-    "name": "Scarlet Bonds Demon",
+    "name": "Sabito Mask",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

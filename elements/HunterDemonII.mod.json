@@ -5,7 +5,7 @@
     "achievementName": "Hunter Demon II",
     "achievementDescription": "One of the 10 Demon Ranks",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:DemonEyes"
     },
     "background": "Default",
     "disableDisplay": false,

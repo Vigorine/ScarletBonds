@@ -1,38 +1,11 @@
 {
   "mod_elements": [
     {
-      "name": "ScarletBondsSlayerUniform",
-      "type": "item",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scarlet_bonds_slayer_uniform",
-      "path": "~/Items"
-    },
-    {
-      "name": "ScarletBondsDemon",
-      "type": "item",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scarlet_bonds_demon",
-      "path": "~/Items"
-    },
-    {
-      "name": "ScarletBondsLogo",
-      "type": "item",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scarlet_bonds_logo",
-      "path": "~/Items"
-    },
-    {
       "name": "Welcome",
       "type": "achievement",
       "sortid": 15,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "welcome",
       "path": "~/Advancements"
     },
@@ -644,71 +617,166 @@
       "locked_code": false,
       "registry_name": "lose_rank_on_death",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Procedures"
-    }
-  ],
-  "variable_elements": [
+    },
     {
-      "name": "global_ticks",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
+      "name": "Logo",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logo",
+      "path": "~/Items"
+    },
+    {
+      "name": "DemonEyes",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_eyes",
+      "path": "~/Items"
+    },
+    {
+      "name": "SlayerUniform",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slayer_uniform",
+      "path": "~/Items"
+    },
+    {
+      "name": "Drums",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drums",
+      "path": "~/Items"
+    },
+    {
+      "name": "SabitoMask",
+      "type": "item",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sabito_mask",
+      "path": "~/Items"
+    },
+    {
+      "name": "SpiderHead",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_head",
+      "path": "~/Items"
+    },
+    {
+      "name": "Ripped",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ripped",
+      "path": "~/Items"
+    },
+    {
+      "name": "HandDemon",
+      "type": "item",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hand_demon",
+      "path": "~/Items"
+    },
+    {
+      "name": "DiceSteak",
+      "type": "item",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_steak",
+      "path": "~/Items"
+    },
+    {
+      "name": "Blood",
+      "type": "item",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood",
+      "path": "~/Items"
+    },
+    {
+      "name": "Kouse",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kouse",
+      "path": "~/Items"
     }
   ],
+  "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "advancements.ravager_demon.title": "Ravager Demon",
+      "item.scarlet_bonds.blood": "Blood",
       "advancements.thrall_demon_ii.title": "Thrall Demon II",
-      "advancements.kanoto.title": "Kanoto",
       "advancements.thrall_demon.descr": "One of the 10 Demon Ranks",
       "advancements.hinoe.title": "Hinoe",
       "advancements.thrall_demon.title": "Thrall Demon",
       "advancements.hinoe.descr": "One of the Demon Slayer Corps 10 Ranks",
       "advancements.feral_demon_ii.title": "Feral Demon II",
-      "advancements.ravager_demon.descr": "One of the 10 Demon Ranks",
-      "advancements.mizunoe.descr": "One of the Demon Slayer Corps 10 Ranks",
       "advancements.feral_demon.descr": "One of the 10 Demon Ranks",
       "advancements.tsuchinoto.descr": "One of the Demon Slayer Corps 10 Ranks",
-      "item.scarlet_bonds.scarlet_bonds_demon": "Scarlet Bonds Demon",
-      "item.scarlet_bonds.scarlet_bonds_slayer_uniform": "Scarlet Bonds Slayer Uniform",
       "advancements.welcome.title": "Scarlet Bonds",
       "advancements.kanoe.descr": "One of the Demon Slayer Corps 10 Ranks",
-      "advancements.tsuchinoe.descr": "One of the Demon Slayer Corps 10 Ranks",
-      "advancements.mizunoto.descr": "One of the Demon Slayer Corps 10 Ranks",
+      "item.scarlet_bonds.drums": "Drums",
       "advancements.tsuchinoto.title": "Tsuchinoto",
       "advancements.kinoe.title": "Kinoe",
-      "advancements.hunter_demon.title": "Hunter Demon",
-      "advancements.hunter_demon.descr": "One of the 10 Demon Ranks",
-      "advancements.kinoto.descr": "One of the Demon Slayer Corps 10 Ranks",
       "advancements.kinoe.descr": "One of the Demon Slayer Corps 10 Ranks",
       "advancements.hinoto.title": "Hinoto",
-      "advancements.kanoe.title": "Kanoe",
-      "advancements.tsuchinoe.title": "Tsuchinoe",
       "advancements.apex_demon.title": "Apex Demon",
-      "advancements.welcome.descr": "Welcome to the Scarlet Bonds mod",
       "advancements.kinoto.title": "Kinoto",
+      "item.scarlet_bonds.ripped": "Ripped",
+      "item.scarlet_bonds.demon_eyes": "Demon Eyes",
+      "advancements.feral_demon_ii.descr": "One of the 10 Demon Ranks",
+      "advancements.mizunoto.title": "Mizunoto",
+      "advancements.twin_horned_demon.title": "Twin Horned Demon",
+      "advancements.horned_demon.title": "Horned Demon",
+      "item.scarlet_bonds.slayer_uniform": "Slayer Uniform",
+      "advancements.hunter_demon_ii.descr": "One of the 10 Demon Ranks",
+      "advancements.ravager_demon.title": "Ravager Demon",
+      "advancements.kanoto.title": "Kanoto",
+      "advancements.ravager_demon.descr": "One of the 10 Demon Ranks",
+      "advancements.mizunoe.descr": "One of the Demon Slayer Corps 10 Ranks",
+      "item.scarlet_bonds.hand_demon": "Hand Demon",
+      "item.scarlet_bonds.sabito_mask": "Sabito Mask",
+      "advancements.tsuchinoe.descr": "One of the Demon Slayer Corps 10 Ranks",
+      "advancements.mizunoto.descr": "One of the Demon Slayer Corps 10 Ranks",
+      "advancements.hunter_demon.title": "Hunter Demon",
+      "item.scarlet_bonds.kouse": "Kouse",
+      "advancements.hunter_demon.descr": "One of the 10 Demon Ranks",
+      "item.scarlet_bonds.dice_steak": "Dice Steak",
+      "advancements.kinoto.descr": "One of the Demon Slayer Corps 10 Ranks",
+      "advancements.tsuchinoe.title": "Tsuchinoe",
+      "advancements.kanoe.title": "Kanoe",
+      "advancements.welcome.descr": "Welcome to the Scarlet Bonds mod",
       "advancements.hinoto.descr": "One of the Demon Slayer Corps 10 Ranks",
       "advancements.feral_demon.title": "Feral Demon",
       "advancements.mizunoe.title": "Mizunoe",
-      "advancements.feral_demon_ii.descr": "One of the 10 Demon Ranks",
-      "advancements.mizunoto.title": "Mizunoto",
+      "item.scarlet_bonds.spider_head": "Spider Head",
       "advancements.kanoto.descr": "One of the Demon Slayer Corps 10 Ranks",
       "advancements.apex_demon.descr": "One of the 10 Demon Ranks",
       "advancements.thrall_demon_ii.descr": "One of the 10 Demon Ranks",
-      "advancements.twin_horned_demon.title": "Twin Horned Demon",
-      "advancements.horned_demon.title": "Horned Demon",
-      "item.scarlet_bonds.scarlet_bonds_logo": "Scarlet Bonds Logo",
       "advancements.hunter_demon_ii.title": "Hunter Demon II",
       "advancements.twin_horned_demon.descr": "One of the 10 Demon Ranks",
-      "advancements.hunter_demon_ii.descr": "One of the 10 Demon Ranks",
+      "item.scarlet_bonds.logo": "Logo",
       "advancements.horned_demon.descr": "One of the 10 Demon Ranks"
     }
   },

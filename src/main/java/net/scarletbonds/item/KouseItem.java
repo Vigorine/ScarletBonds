@@ -12,12 +12,12 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 @ScarletBondsModElements.ModElement.Tag
-public class ScarletBondsLogoItem extends ScarletBondsModElements.ModElement {
-	@ObjectHolder("scarlet_bonds:scarlet_bonds_logo")
+public class KouseItem extends ScarletBondsModElements.ModElement {
+	@ObjectHolder("scarlet_bonds:kouse")
 	public static final Item block = null;
 
-	public ScarletBondsLogoItem(ScarletBondsModElements instance) {
-		super(instance, 14);
+	public KouseItem(ScarletBondsModElements instance) {
+		super(instance, 67);
 	}
 
 	@Override
@@ -28,7 +28,7 @@ public class ScarletBondsLogoItem extends ScarletBondsModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("scarlet_bonds_logo");
+			setRegistryName("kouse");
 		}
 
 		@Override

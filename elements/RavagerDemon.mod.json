@@ -5,7 +5,7 @@
     "achievementName": "Ravager Demon",
     "achievementDescription": "One of the 10 Demon Ranks",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:SpiderHead"
     },
     "background": "Default",
     "disableDisplay": false,

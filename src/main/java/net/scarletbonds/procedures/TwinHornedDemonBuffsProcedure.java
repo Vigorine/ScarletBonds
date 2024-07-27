@@ -65,20 +65,46 @@ public class TwinHornedDemonBuffsProcedure {
 						.isDone()
 				: false) {
 			if (entity.isSprinting()) {
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:speed 999999 10 true");
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.SPEED)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 10) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:speed 999999 10 true");
+						}
 					}
 				}
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:jump_boost 999999 3 true");
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.JUMP_BOOST)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 3) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:jump_boost 999999 3 true");
+						}
 					}
 				}
 			} else {
@@ -120,20 +146,20 @@ public class TwinHornedDemonBuffsProcedure {
 						}
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
-				}.start(world, (int) 20);
+				}.start(world, (int) 100);
 			}
-			if (!(new Object() {
+			if (new Object() {
 				int check(Entity _entity) {
 					if (_entity instanceof LivingEntity) {
 						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == Effects.HEALTH_BOOST)
+							if (effect.getPotion() == Effects.STRENGTH)
 								return effect.getAmplifier();
 						}
 					}
 					return 0;
 				}
-			}.check(entity) == 55)) {
+			}.check(entity) < 14) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
@@ -147,9 +173,67 @@ public class TwinHornedDemonBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s kimetsunoyaiba:demon 999999 18 true");
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
+					}
+				}
+			}
+			if (new Object() {
+				int check(Entity _entity) {
+					if (_entity instanceof LivingEntity) {
+						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+						for (EffectInstance effect : effects) {
+							if (effect.getPotion() == Effects.RESISTANCE)
+								return effect.getAmplifier();
+						}
+					}
+					return 0;
+				}
+			}.check(entity) < 3) {
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
 								"effect give @s minecraft:resistance 999999 3 true");
 					}
 				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s kimetsunoyaiba:demon 999999 18 true");
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
+					}
+				}
+			}
+			if (new Object() {
+				int check(Entity _entity) {
+					if (_entity instanceof LivingEntity) {
+						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+						for (EffectInstance effect : effects) {
+							if (effect.getPotion() == Effects.HEALTH_BOOST)
+								return effect.getAmplifier();
+						}
+					}
+					return 0;
+				}
+			}.check(entity) < 55) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
