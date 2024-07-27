@@ -69,7 +69,8 @@ public class HunterDemonBuffsProcedure {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:speed 999999 6");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:speed 999999 6 true");
 					}
 				}
 				{
@@ -77,7 +78,7 @@ public class HunterDemonBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:jump_boost 999999 3");
+								"effect give @s minecraft:jump_boost 999999 3 true");
 					}
 				}
 			} else {
@@ -137,7 +138,8 @@ public class HunterDemonBuffsProcedure {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:strength 999999 11");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:strength 999999 11 true");
 					}
 				}
 				{
@@ -145,7 +147,7 @@ public class HunterDemonBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:resistance 999999 3");
+								"effect give @s minecraft:resistance 999999 3 true");
 					}
 				}
 				{
@@ -153,7 +155,7 @@ public class HunterDemonBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:health_boost 999999 39");
+								"effect give @s minecraft:health_boost 999999 39 true");
 					}
 				}
 				{
@@ -161,7 +163,7 @@ public class HunterDemonBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s kimetsunoyaiba:demon 999999 10");
+								"effect give @s kimetsunoyaiba:demon 999999 10 true");
 					}
 				}
 			}

@@ -69,7 +69,8 @@ public class HinotoBuffsProcedure {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:speed 999999 6");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:speed 999999 6 true");
 					}
 				}
 				{
@@ -77,7 +78,7 @@ public class HinotoBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:jump_boost 999999 3");
+								"effect give @s minecraft:jump_boost 999999 3 true");
 					}
 				}
 			} else {
@@ -137,7 +138,8 @@ public class HinotoBuffsProcedure {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s minecraft:strength 999999 14");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:strength 999999 14 true");
 					}
 				}
 				{
@@ -145,7 +147,7 @@ public class HinotoBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:resistance 999999 3");
+								"effect give @s minecraft:resistance 999999 3 true");
 					}
 				}
 				{
@@ -153,7 +155,7 @@ public class HinotoBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:night_vision 999999 1");
+								"effect give @s minecraft:night_vision 999999 1 true");
 					}
 				}
 				{
@@ -161,7 +163,7 @@ public class HinotoBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:health_boost 999999 24");
+								"effect give @s minecraft:health_boost 999999 24 true");
 					}
 				}
 				{
@@ -169,7 +171,7 @@ public class HinotoBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0");
+								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
 					}
 				}
 			}
