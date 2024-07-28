@@ -5,7 +5,7 @@
     "achievementName": "Upper Moon One",
     "achievementDescription": "You are the strongest beside the Demon King. ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:IconU1"
     },
     "background": "Default",
     "disableDisplay": false,

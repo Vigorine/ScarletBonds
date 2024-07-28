@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "item_uniform_iguro",
+    "texture": "keiteiken",
     "customModelName": "Normal",
-    "name": "Iguro_Icon",
+    "name": "Icon Kizuki",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

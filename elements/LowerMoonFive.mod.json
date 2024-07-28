@@ -5,7 +5,7 @@
     "achievementName": "Lower Moon Five",
     "achievementDescription": "Rank up in the Twelve Kizuki",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:IconL5"
     },
     "background": "Default",
     "disableDisplay": false,

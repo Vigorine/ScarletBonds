@@ -732,7 +732,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "iguro_uniform",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformKocho",
@@ -741,7 +741,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_kocho",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformMuichiro",
@@ -750,7 +750,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_muichiro",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformUzui",
@@ -759,7 +759,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_uzui",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformHimejima",
@@ -768,7 +768,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_himejima",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformRengoku",
@@ -777,7 +777,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_rengoku",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformShinazugawa",
@@ -786,7 +786,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_shinazugawa",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformTanjiro",
@@ -795,7 +795,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_tanjiro",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformTomioka",
@@ -804,7 +804,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_tomioka",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformZenitzu",
@@ -813,7 +813,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_zenitzu",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformMitsuri",
@@ -822,7 +822,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_mitsuri",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformInosuke",
@@ -831,7 +831,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_inosuke",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "UniformHumanKokushibo",
@@ -840,7 +840,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uniform_human_kokushibo",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "SerpentHashira",
@@ -984,7 +984,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hashira_logo",
-      "path": "~/Items/Hashira_Uniform"
+      "path": "~/Items/Hashira_Icons"
     },
     {
       "name": "LowerMoonSix",
@@ -1102,6 +1102,96 @@
       "locked_code": false,
       "registry_name": "twelve_kizuki",
       "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "IconL5",
+      "type": "item",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_l_5",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconL2",
+      "type": "item",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_l_2",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconL1",
+      "type": "item",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_l_1",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconU6",
+      "type": "item",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_u_6",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconU5",
+      "type": "item",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_u_5",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconU4",
+      "type": "item",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_u_4",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconU3",
+      "type": "item",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_u_3",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconU2",
+      "type": "item",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_u_2",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconU1",
+      "type": "item",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_u_1",
+      "path": "~/Items/Kizuki_Icons"
+    },
+    {
+      "name": "IconKizuki",
+      "type": "item",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_kizuki",
+      "path": "~/Items/Kizuki_Icons"
     }
   ],
   "variable_elements": [],
@@ -1111,10 +1201,13 @@
       "advancements.lower_moon_two.descr": "Rank up in the Twelve Kizuki",
       "item.scarlet_bonds.uniform_shinazugawa": "Uniform Shinazugawa",
       "advancements.thrall_demon_ii.title": "Thrall Demon II",
+      "item.scarlet_bonds.icon_l_1": "Icon L 1",
       "advancements.hinoe.title": "Hinoe",
       "advancements.lower_moon_six.title": "Lower Moon Six",
+      "item.scarlet_bonds.icon_l_2": "Icon L 2",
       "advancements.thrall_demon.title": "Thrall Demon",
       "advancements.feral_demon_ii.title": "Feral Demon II",
+      "item.scarlet_bonds.icon_l_5": "Icon L 5",
       "item.scarlet_bonds.drums": "Drums",
       "advancements.tsuchinoto.title": "Tsuchinoto",
       "advancements.upper_moon_six.title": "Upper Moon Six",
@@ -1127,14 +1220,14 @@
       "advancements.lower_moon_five.descr": "Rank up in the Twelve Kizuki",
       "advancements.hashira.descr": "Join the Hashira Ranks",
       "advancements.flower_hashira.title": "Flower Hashira",
-      "item.scarlet_bonds.uniform_tanjiro": "Uniform Tanjiro",
       "item.scarlet_bonds.demon_eyes": "Demon Eyes",
+      "item.scarlet_bonds.uniform_tanjiro": "Uniform Tanjiro",
       "advancements.upper_moon_two.descr": "Can you become the strongest?",
       "advancements.twin_horned_demon.title": "Twin Horned Demon",
-      "item.scarlet_bonds.uniform_kocho": "Uniform Kocho",
+      "item.scarlet_bonds.uniform_kocho": "Kocho_Icon",
       "advancements.sun_hashira.descr": "Become the Sun Hashira",
-      "advancements.flame_hashira.descr": "Become the Flame Hashira",
       "item.scarlet_bonds.uniform_himejima": "Uniform Himejima",
+      "advancements.flame_hashira.descr": "Become the Flame Hashira",
       "item.scarlet_bonds.slayer_uniform": "Slayer Uniform",
       "advancements.moon_hashira.title": "Moon Hashira",
       "advancements.beast_hashira.title": "Beast Hashira",
@@ -1157,7 +1250,7 @@
       "advancements.hunter_demon.title": "Hunter Demon",
       "item.scarlet_bonds.kouse": "Kouse",
       "advancements.kinoto.descr": "Rank up to Kinoto",
-      "item.scarlet_bonds.iguro_uniform": "Iguro Uniform",
+      "item.scarlet_bonds.iguro_uniform": "Iguro_Icon",
       "advancements.lower_moon_four.descr": "Rank up in the Twelve Kizuki",
       "advancements.tsuchinoe.title": "Tsuchinoe",
       "advancements.kanoe.title": "Kanoe",
@@ -1196,6 +1289,7 @@
       "advancements.lower_moon_six.descr": "You are now a part of the Twelve Kizuki",
       "advancements.feral_demon_ii.descr": "Become stronger ",
       "advancements.mizunoto.title": "Mizunoto",
+      "item.scarlet_bonds.icon_kizuki": "Icon Kizuki",
       "advancements.horned_demon.title": "Horned Demon",
       "advancements.lower_moon_one.title": "Lower Moon One",
       "advancements.serpent_hashira.title": "Serpent Hashira",
@@ -1206,6 +1300,7 @@
       "advancements.stone_hashira.title": "Stone Hashira",
       "advancements.upper_moon_one.descr": "You are the strongest beside the Demon King. ",
       "advancements.mist_hashira.descr": "Become the Mist Hashira",
+      "item.scarlet_bonds.icon_u_1": "Icon U 1",
       "item.scarlet_bonds.sabito_mask": "Sabito Mask",
       "advancements.tsuchinoe.descr": "Rank up to Tsuchinoe ",
       "advancements.mist_hashira.title": "Mist Hashira",
@@ -1223,9 +1318,14 @@
       "advancements.upper_moon_five.title": "Upper Moon Five",
       "advancements.thrall_demon_ii.descr": "Become stronger ",
       "advancements.flower_hashira.descr": "Become the Flower Hashira",
+      "item.scarlet_bonds.icon_u_2": "Icon U 2",
       "advancements.lower_moon_three.title": "Lower Moon Three",
+      "item.scarlet_bonds.icon_u_3": "Icon U 3",
       "item.scarlet_bonds.uniform_zenitzu": "Uniform Zenitzu",
       "advancements.lower_moon_five.title": "Lower Moon Five",
+      "item.scarlet_bonds.icon_u_4": "Icon U 4",
+      "item.scarlet_bonds.icon_u_5": "Icon U 5",
+      "item.scarlet_bonds.icon_u_6": "Icon U 6",
       "advancements.serpent_hashira.descr": "Become the Serpent Hashira",
       "advancements.twin_horned_demon.descr": "Grow a second horn ",
       "advancements.stone_hashira.descr": "Become the Stone Hashira",
@@ -1277,11 +1377,15 @@
         "name": "Items",
         "children": [
           {
-            "name": "Hashira_Uniform",
+            "name": "Hashira_Icons",
             "children": []
           },
           {
             "name": "Regular_Rank_Icons",
+            "children": []
+          },
+          {
+            "name": "Kizuki_Icons",
             "children": []
           }
         ]

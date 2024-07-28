@@ -5,12 +5,12 @@
     "achievementName": "Twelve Kizuki",
     "achievementDescription": "Join the Twelve Kizuki ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:IconKizuki"
     },
     "background": "Default",
-    "disableDisplay": false,
+    "disableDisplay": true,
     "showPopup": true,
-    "announceToChat": true,
+    "announceToChat": false,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],

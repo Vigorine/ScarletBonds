@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "item_uniform_iguro",
+    "texture": "icon_rokakko_sennkazinnrou_head",
     "customModelName": "Normal",
-    "name": "Iguro_Icon",
+    "name": "Icon L 2",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

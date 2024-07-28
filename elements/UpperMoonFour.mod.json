@@ -5,7 +5,7 @@
     "achievementName": "Upper Moon Four",
     "achievementDescription": "Rank up in the Upper Moons",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:IconU4"
     },
     "background": "Default",
     "disableDisplay": false,

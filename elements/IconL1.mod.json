@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "item_uniform_iguro",
+    "texture": "enmu_tentacle",
     "customModelName": "Normal",
-    "name": "Iguro_Icon",
+    "name": "Icon L 1",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

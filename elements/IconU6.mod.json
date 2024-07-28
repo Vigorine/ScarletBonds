@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "item_uniform_iguro",
+    "texture": "icon_clothes_kaigaku",
     "customModelName": "Normal",
-    "name": "Iguro_Icon",
+    "name": "Icon U 6",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
