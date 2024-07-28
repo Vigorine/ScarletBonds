@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Tsuchinoto",
-    "achievementDescription": "One of the Demon Slayer Corps 10 Ranks",
+    "achievementDescription": "Rank up to Tsuchinoto",
     "achievementIcon": {
-      "value": "CUSTOM:SlayerUniform"
+      "value": "CUSTOM:ScarletBondsSlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,

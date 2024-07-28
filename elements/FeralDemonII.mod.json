@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Feral Demon II",
-    "achievementDescription": "One of the 10 Demon Ranks",
+    "achievementDescription": "Become stronger ",
     "achievementIcon": {
-      "value": "CUSTOM:HandDemon"
+      "value": "CUSTOM:ScarletBondsDemon"
     },
     "background": "Default",
     "disableDisplay": false,

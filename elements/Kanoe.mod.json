@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Kanoe",
-    "achievementDescription": "One of the Demon Slayer Corps 10 Ranks",
+    "achievementDescription": "Rank up to Kanoe ",
     "achievementIcon": {
-      "value": "CUSTOM:DiceSteak"
+      "value": "CUSTOM:ScarletBondsSlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,

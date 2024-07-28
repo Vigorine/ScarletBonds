@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Thrall Demon",
-    "achievementDescription": "One of the 10 Demon Ranks",
+    "achievementDescription": "Turn into a Demon",
     "achievementIcon": {
-      "value": "CUSTOM:Blood"
+      "value": "CUSTOM:ScarletBondsDemon"
     },
     "background": "Default",
     "disableDisplay": false,

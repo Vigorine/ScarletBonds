@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Apex Demon",
-    "achievementDescription": "One of the 10 Demon Ranks",
+    "achievementDescription": "Are you strong enough to Join the Twelve Kizuki? ",
     "achievementIcon": {
-      "value": "CUSTOM:Drums"
+      "value": "CUSTOM:ScarletBondsDemon"
     },
     "background": "Default",
     "disableDisplay": false,

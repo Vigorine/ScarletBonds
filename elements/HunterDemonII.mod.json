@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Hunter Demon II",
-    "achievementDescription": "One of the 10 Demon Ranks",
+    "achievementDescription": "Become Stronger ",
     "achievementIcon": {
-      "value": "CUSTOM:DemonEyes"
+      "value": "CUSTOM:ScarletBondsDemon"
     },
     "background": "Default",
     "disableDisplay": false,

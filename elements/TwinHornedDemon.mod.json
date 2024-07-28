@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Twin Horned Demon",
-    "achievementDescription": "One of the 10 Demon Ranks",
+    "achievementDescription": "Grow a second horn ",
     "achievementIcon": {
-      "value": "CUSTOM:DemonEyes"
+      "value": "CUSTOM:ScarletBondsDemon"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Ravager Demon",
-    "achievementDescription": "One of the 10 Demon Ranks",
+    "achievementDescription": "Become stronger ",
     "achievementIcon": {
-      "value": "CUSTOM:SpiderHead"
+      "value": "CUSTOM:ScarletBondsDemon"
     },
     "background": "Default",
     "disableDisplay": false,

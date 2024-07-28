@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Kinoe",
-    "achievementDescription": "One of the Demon Slayer Corps 10 Ranks",
+    "achievementDescription": "Can you become a Hashira?",
     "achievementIcon": {
-      "value": "CUSTOM:SabitoMask"
+      "value": "CUSTOM:ScarletBondsSlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Hinoto",
-    "achievementDescription": "One of the Demon Slayer Corps 10 Ranks",
+    "achievementDescription": "Rank up to Hinoto",
     "achievementIcon": {
-      "value": "CUSTOM:Ripped"
+      "value": "CUSTOM:ScarletBondsSlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,
