@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:uniform_uzui"
+    },
+    "title": {
+      "translate": "advancements.sound_hashira.title"
+    },
+    "description": {
+      "translate": "advancements.sound_hashira.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "sound_hashira": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:mist_hashira"
+}

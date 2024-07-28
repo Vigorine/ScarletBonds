@@ -5,7 +5,7 @@
     "achievementName": "Twin Horned Demon",
     "achievementDescription": "Grow a second horn ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:DemonEyes"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -5,7 +5,7 @@
     "achievementName": "Kanoto",
     "achievementDescription": "Rank up to Kanoto ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsSlayerUniform"
+      "value": "CUSTOM:SlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,

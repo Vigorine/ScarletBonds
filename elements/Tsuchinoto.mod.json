@@ -5,7 +5,7 @@
     "achievementName": "Tsuchinoto",
     "achievementDescription": "Rank up to Tsuchinoto",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsSlayerUniform"
+      "value": "CUSTOM:SlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,

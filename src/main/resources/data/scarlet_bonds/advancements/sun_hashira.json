@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:uniform_tanjiro"
+    },
+    "title": {
+      "translate": "advancements.sun_hashira.title"
+    },
+    "description": {
+      "translate": "advancements.sun_hashira.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "sun_hashira": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:wind_hashira"
+}

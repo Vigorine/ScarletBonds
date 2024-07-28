@@ -5,7 +5,7 @@
     "achievementName": "Tsuchinoe",
     "achievementDescription": "Rank up to Tsuchinoe ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsSlayerUniform"
+      "value": "CUSTOM:SlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,

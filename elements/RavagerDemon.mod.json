@@ -5,7 +5,7 @@
     "achievementName": "Ravager Demon",
     "achievementDescription": "Become stronger ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:SpiderHead"
     },
     "background": "Default",
     "disableDisplay": false,

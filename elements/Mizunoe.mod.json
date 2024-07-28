@@ -5,7 +5,7 @@
     "achievementName": "Mizunoe",
     "achievementDescription": "Rank up to Mizunoe",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsSlayerUniform"
+      "value": "CUSTOM:SlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,

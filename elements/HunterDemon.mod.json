@@ -5,7 +5,7 @@
     "achievementName": "Hunter Demon",
     "achievementDescription": "Become a hunter demon ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:DemonEyes"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -5,7 +5,7 @@
     "achievementName": "Thrall Demon II",
     "achievementDescription": "Become stronger ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:DemonEyes"
     },
     "background": "Default",
     "disableDisplay": false,

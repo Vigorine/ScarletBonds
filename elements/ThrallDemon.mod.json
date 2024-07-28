@@ -5,7 +5,7 @@
     "achievementName": "Thrall Demon",
     "achievementDescription": "Turn into a Demon",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:Blood"
     },
     "background": "Default",
     "disableDisplay": false,

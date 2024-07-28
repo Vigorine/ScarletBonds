@@ -5,7 +5,7 @@
     "achievementName": "Hinoe",
     "achievementDescription": "Rank up to Hinoe ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsSlayerUniform"
+      "value": "CUSTOM:SlayerUniform"
     },
     "background": "Default",
     "disableDisplay": false,

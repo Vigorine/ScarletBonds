@@ -5,7 +5,7 @@
     "achievementName": "Kinoe",
     "achievementDescription": "Can you become a Hashira?",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsSlayerUniform"
+      "value": "CUSTOM:SabitoMask"
     },
     "background": "Default",
     "disableDisplay": false,

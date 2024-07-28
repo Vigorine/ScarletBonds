@@ -5,7 +5,7 @@
     "achievementName": "Hunter Demon II",
     "achievementDescription": "Become Stronger ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:DemonEyes"
     },
     "background": "Default",
     "disableDisplay": false,

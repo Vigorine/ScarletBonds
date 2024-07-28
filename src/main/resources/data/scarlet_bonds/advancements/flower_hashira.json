@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:pink_tulip"
+    },
+    "title": {
+      "translate": "advancements.flower_hashira.title"
+    },
+    "description": {
+      "translate": "advancements.flower_hashira.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "flower_hashira": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:moon_hashira"
+}

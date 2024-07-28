@@ -5,7 +5,7 @@
     "achievementName": "Horned Demon",
     "achievementDescription": "Become stronger, eventually attaining a horn ",
     "achievementIcon": {
-      "value": "CUSTOM:ScarletBondsDemon"
+      "value": "CUSTOM:DemonEyes"
     },
     "background": "Default",
     "disableDisplay": false,
