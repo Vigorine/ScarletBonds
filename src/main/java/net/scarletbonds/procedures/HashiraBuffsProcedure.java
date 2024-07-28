@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collection;
 
-public class KizukiBuffsProcedure {
+public class HashiraBuffsProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -48,12 +48,12 @@ public class KizukiBuffsProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency world for procedure KizukiBuffs!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency world for procedure HashiraBuffs!");
 			return;
 		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure KizukiBuffs!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure HashiraBuffs!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
@@ -61,7 +61,7 @@ public class KizukiBuffsProcedure {
 		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-								.getAdvancement(new ResourceLocation("scarlet_bonds:twelve_kizuki")))
+								.getAdvancement(new ResourceLocation("scarlet_bonds:hashira")))
 						.isDone()
 				: false) {
 			if (entity.isSprinting()) {
@@ -176,19 +176,41 @@ public class KizukiBuffsProcedure {
 					}
 					return 0;
 				}
-			}.check(entity) < 0) {
+			}.check(entity) < 3) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager()
-								.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:resistance 999999 3");
+					}
+				}
+			}
+			if (!(new Object() {
+				int check(Entity _entity) {
+					if (_entity instanceof LivingEntity) {
+						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+						for (EffectInstance effect : effects) {
+							if (effect.getPotion() == Effects.NIGHT_VISION)
+								return effect.getAmplifier();
+						}
+					}
+					return 0;
+				}
+			}.check(entity) >= 1)) {
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:night_vision 999999 1");
 					}
 				}
 			}
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_six")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:serpent_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -196,19 +218,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 61) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 61");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -216,7 +237,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_five")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:insect_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -224,19 +245,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 64) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 64");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -244,7 +264,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_four")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:mist_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -252,19 +272,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 68) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 68");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -272,7 +291,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_three")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:sound_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -280,19 +299,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 73) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 73");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -300,7 +318,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_two")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:stone_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -308,19 +326,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 79) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 79");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -328,7 +345,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_one")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:flame_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -336,19 +353,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 86) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 86");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -356,7 +372,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_six")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:wind_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -364,19 +380,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 94) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 94");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -384,7 +399,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_five")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:sun_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -392,19 +407,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 106) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 106");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -412,7 +426,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_four")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:water_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -420,19 +434,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 122) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 122");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -440,7 +453,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_three")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:thunder_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -448,19 +461,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 142) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 142");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -468,7 +480,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_two")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:love_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -476,19 +488,18 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 166) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 166");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -496,7 +507,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_one")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:beast_hashira")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -504,19 +515,72 @@ public class KizukiBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 194) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 194");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:moon_hashira")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.STRENGTH)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 0) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:flower_hashira")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.STRENGTH)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 0) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
