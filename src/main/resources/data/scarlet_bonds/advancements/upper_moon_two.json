@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:logo"
+    },
+    "title": {
+      "translate": "advancements.upper_moon_two.title"
+    },
+    "description": {
+      "translate": "advancements.upper_moon_two.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "upper_moon_two": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:upper_moon_three"
+}

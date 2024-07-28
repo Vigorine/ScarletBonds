@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:logo"
+    },
+    "title": {
+      "translate": "advancements.twelve_kizuki.title"
+    },
+    "description": {
+      "translate": "advancements.twelve_kizuki.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "twelve_kizuki": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:apex_demon"
+}
