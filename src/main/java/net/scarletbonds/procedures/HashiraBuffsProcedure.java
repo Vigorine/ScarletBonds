@@ -1,28 +1,9 @@
 package net.scarletbonds.procedures;
 
-import net.scarletbonds.ScarletBondsMod;
-
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collection;
+import net.minecraftforge.eventbus.api.Event;
 
 public class HashiraBuffsProcedure {
+
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -56,8 +37,10 @@ public class HashiraBuffsProcedure {
 				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure HashiraBuffs!");
 			return;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
+
 		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -141,6 +124,7 @@ public class HashiraBuffsProcedure {
 					}
 				}.check(entity)) {
 					new Object() {
+
 						private int ticks = 0;
 						private float waitTicks;
 						private IWorld world;
@@ -171,6 +155,7 @@ public class HashiraBuffsProcedure {
 							}
 							MinecraftForge.EVENT_BUS.unregister(this);
 						}
+
 					}.start(world, (int) 50);
 				}
 			}
@@ -824,4 +809,5 @@ public class HashiraBuffsProcedure {
 			}
 		}
 	}
+
 }
