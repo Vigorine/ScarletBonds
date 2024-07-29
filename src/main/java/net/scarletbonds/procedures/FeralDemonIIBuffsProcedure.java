@@ -108,45 +108,71 @@ public class FeralDemonIIBuffsProcedure {
 					}
 				}
 			} else {
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect clear @s minecraft:speed");
-					}
-				}
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-					private IWorld world;
-
-					public void start(IWorld world, int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
-					}
-
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
-						}
-					}
-
-					private void run() {
-						{
-							Entity _ent = entity;
-							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-								_ent.world.getServer().getCommandManager().handleCommand(
-										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-										"effect clear @s minecraft:jump_boost");
+				if (new Object() {
+					boolean check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.SPEED)
+									return true;
 							}
 						}
-						MinecraftForge.EVENT_BUS.unregister(this);
+						return false;
 					}
-				}.start(world, (int) 100);
+				}.check(entity)) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect clear @s minecraft:speed");
+						}
+					}
+				}
+				if (new Object() {
+					boolean check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.JUMP_BOOST)
+									return true;
+							}
+						}
+						return false;
+					}
+				}.check(entity)) {
+					new Object() {
+						private int ticks = 0;
+						private float waitTicks;
+						private IWorld world;
+
+						public void start(IWorld world, int waitTicks) {
+							this.waitTicks = waitTicks;
+							MinecraftForge.EVENT_BUS.register(this);
+							this.world = world;
+						}
+
+						@SubscribeEvent
+						public void tick(TickEvent.ServerTickEvent event) {
+							if (event.phase == TickEvent.Phase.END) {
+								this.ticks += 1;
+								if (this.ticks >= this.waitTicks)
+									run();
+							}
+						}
+
+						private void run() {
+							{
+								Entity _ent = entity;
+								if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+									_ent.world.getServer().getCommandManager().handleCommand(
+											_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+											"effect clear @s minecraft:jump_boost");
+								}
+							}
+							MinecraftForge.EVENT_BUS.unregister(this);
+						}
+					}.start(world, (int) 100);
+				}
 			}
 			if (new Object() {
 				int check(Entity _entity) {
