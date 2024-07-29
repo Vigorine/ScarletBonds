@@ -1456,6 +1456,27 @@
         ]
       },
       "path": "~/Procedures/Demon_Buffs"
+    },
+    {
+      "name": "HashiraBuffs",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hashira_buffs",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Buffs"
     }
   ],
   "variable_elements": [],
