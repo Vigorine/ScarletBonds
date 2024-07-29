@@ -3,14 +3,14 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Kaigaku Buff",
-    "achievementDescription": "Your strength and speed is exceptional ",
+    "achievementDescription": "Your strength and speed are exceptional ",
     "achievementIcon": {
       "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
-    "announceToChat": true,
+    "announceToChat": false,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
@@ -18,8 +18,8 @@
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:KamanueBuff"
+      "value": "CUSTOM:ThrallDemon"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"33\" y=\"29\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"40\" y=\"71\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }
