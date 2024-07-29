@@ -202,12 +202,13 @@ public class KizukiBuffsProcedure {
 					}
 					return 0;
 				}
-			}.check(entity) < 0) {
+			}.check(entity) < 3) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager()
-								.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:resistance 999999 3 true");
 					}
 				}
 			}
@@ -234,7 +235,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 61");
+									"effect give @s minecraft:health_boost 999999 61 true");
 						}
 					}
 				}
@@ -262,7 +263,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 64");
+									"effect give @s minecraft:health_boost 999999 64 true");
 						}
 					}
 				}
@@ -290,7 +291,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 68");
+									"effect give @s minecraft:health_boost 999999 68 true");
 						}
 					}
 				}
@@ -318,7 +319,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 73");
+									"effect give @s minecraft:health_boost 999999 73 true");
 						}
 					}
 				}
@@ -346,7 +347,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 79");
+									"effect give @s minecraft:health_boost 999999 79 true");
 						}
 					}
 				}
@@ -374,7 +375,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 86");
+									"effect give @s minecraft:health_boost 999999 86 true");
 						}
 					}
 				}
@@ -402,7 +403,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 94");
+									"effect give @s minecraft:health_boost 999999 94 true");
 						}
 					}
 				}
@@ -430,7 +431,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 106");
+									"effect give @s minecraft:health_boost 999999 106 true");
 						}
 					}
 				}
@@ -458,7 +459,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 122");
+									"effect give @s minecraft:health_boost 999999 122 true");
 						}
 					}
 				}
@@ -486,7 +487,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 142");
+									"effect give @s minecraft:health_boost 999999 142 true");
 						}
 					}
 				}
@@ -514,7 +515,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 166");
+									"effect give @s minecraft:health_boost 999999 166 true");
 						}
 					}
 				}
@@ -542,7 +543,7 @@ public class KizukiBuffsProcedure {
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 194");
+									"effect give @s minecraft:health_boost 999999 194 true");
 						}
 					}
 				}
