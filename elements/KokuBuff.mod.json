@@ -5,7 +5,7 @@
     "achievementName": "Koku Buff",
     "achievementDescription": "Your strength and durabilty is exceptional ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,

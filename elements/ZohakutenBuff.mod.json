@@ -5,7 +5,7 @@
     "achievementName": "Zohakuten Buff",
     "achievementDescription": "Your speed and durability is exceptional ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,

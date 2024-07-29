@@ -5,7 +5,7 @@
     "achievementName": "Tokito Buff",
     "achievementDescription": "Your strength is exceptional ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:BlueIcon"
     },
     "background": "Default",
     "disableDisplay": false,

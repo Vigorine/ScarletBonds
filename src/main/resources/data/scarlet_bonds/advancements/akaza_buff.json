@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "scarlet_bonds:logo"
+      "item": "scarlet_bonds:red_icon"
     },
     "title": {
       "translate": "advancements.akaza_buff.title"

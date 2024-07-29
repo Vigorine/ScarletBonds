@@ -5,7 +5,7 @@
     "achievementName": "Kanawo Buff",
     "achievementDescription": "Your strength is execptional ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:BlueIcon"
     },
     "background": "Default",
     "disableDisplay": false,

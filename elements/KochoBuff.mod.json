@@ -5,7 +5,7 @@
     "achievementName": "Kocho Buff",
     "achievementDescription": "Your breathing and strength is optimised ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:BlueIcon"
     },
     "background": "Default",
     "disableDisplay": false,

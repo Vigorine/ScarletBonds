@@ -5,7 +5,7 @@
     "achievementName": "Kamanue Buff",
     "achievementDescription": "Your strength and efficiency is enhanced",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,

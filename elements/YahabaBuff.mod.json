@@ -5,7 +5,7 @@
     "achievementName": "Yahaba Buff",
     "achievementDescription": "Your strength is exceptional ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,

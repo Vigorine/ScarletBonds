@@ -5,7 +5,7 @@
     "achievementName": "Lower Moon Six",
     "achievementDescription": "You are now a part of the Twelve Kizuki",
     "achievementIcon": {
-      "value": "Items.END_CRYSTAL"
+      "value": "CUSTOM:DemonEyes"
     },
     "background": "Default",
     "disableDisplay": false,

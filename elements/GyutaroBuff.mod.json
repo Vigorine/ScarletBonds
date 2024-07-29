@@ -5,7 +5,7 @@
     "achievementName": "Gyutaro Buff",
     "achievementDescription": "Your durability is enhanced",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,

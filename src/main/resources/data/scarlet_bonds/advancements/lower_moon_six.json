@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:end_crystal"
+      "item": "scarlet_bonds:demon_eyes"
     },
     "title": {
       "translate": "advancements.lower_moon_six.title"

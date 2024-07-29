@@ -5,7 +5,7 @@
     "achievementName": "Inosuke Buff",
     "achievementDescription": "Your body is in peak condition ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:BlueIcon"
     },
     "background": "Default",
     "disableDisplay": false,

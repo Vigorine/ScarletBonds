@@ -5,7 +5,7 @@
     "achievementName": "Hairo Buff",
     "achievementDescription": "Your strength and speed is exceptional ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,

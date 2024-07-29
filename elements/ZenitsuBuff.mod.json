@@ -5,7 +5,7 @@
     "achievementName": "Zenitsu Buff",
     "achievementDescription": "Your breathing, strength and durabilty are all optimised ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:BlueIcon"
     },
     "background": "Default",
     "disableDisplay": false,

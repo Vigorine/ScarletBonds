@@ -5,7 +5,7 @@
     "achievementName": "Uzui Buff",
     "achievementDescription": "You are exceptionally fast",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:BlueIcon"
     },
     "background": "Default",
     "disableDisplay": false,

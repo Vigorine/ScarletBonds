@@ -4,10 +4,10 @@
       "item": "scarlet_bonds:blue_icon"
     },
     "title": {
-      "translate": "advancements.moon_buff.title"
+      "translate": "advancements.tomiyoka_buff.title"
     },
     "description": {
-      "translate": "advancements.moon_buff.descr"
+      "translate": "advancements.tomiyoka_buff.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,9 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "moon_buff": {
+    "tomiyoka_buff": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:inosuke_buff"
+  "parent": "scarlet_bonds:moon_buff"
 }

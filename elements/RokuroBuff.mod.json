@@ -5,7 +5,7 @@
     "achievementName": "Rokuro Buff",
     "achievementDescription": "Your efficiency is optimised ",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,
