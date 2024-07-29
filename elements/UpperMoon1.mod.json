@@ -2,8 +2,8 @@
   "_fv": 34,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Upper Moon One",
-    "achievementDescription": "You are the strongest beside the Demon King. ",
+    "achievementName": "Upper Moon 1",
+    "achievementDescription": "The strongest Twelve Kizuki member.",
     "achievementIcon": {
       "value": "CUSTOM:IconU1"
     },
@@ -20,6 +20,6 @@
     "parent": {
       "value": "CUSTOM:UpperMoonTwo"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"17\" y=\"48\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"54\" y=\"63\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

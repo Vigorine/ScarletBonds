@@ -76,12 +76,13 @@ public class KizukiBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 0) {
+				}.check(entity) < 12) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager()
-									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:speed 999999 12 true");
 						}
 					}
 				}
@@ -96,12 +97,13 @@ public class KizukiBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 0) {
+				}.check(entity) < 4) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager()
-									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:jump_boost 999999 4 true");
 						}
 					}
 				}
@@ -121,8 +123,8 @@ public class KizukiBuffsProcedure {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager()
-									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect clear @s minecraft:speed");
 						}
 					}
 				}
@@ -162,13 +164,14 @@ public class KizukiBuffsProcedure {
 							{
 								Entity _ent = entity;
 								if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-									_ent.world.getServer().getCommandManager()
-											.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+									_ent.world.getServer().getCommandManager().handleCommand(
+											_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+											"effect clear @s minecraft:jump_boost");
 								}
 							}
 							MinecraftForge.EVENT_BUS.unregister(this);
 						}
-					}.start(world, (int) 100);
+					}.start(world, (int) 50);
 				}
 			}
 			if (new Object() {
@@ -182,12 +185,29 @@ public class KizukiBuffsProcedure {
 					}
 					return 0;
 				}
-			}.check(entity) < 0) {
+			}.check(entity) < 20) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager()
-								.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:strength 999999 20 true");
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s kimetsunoyaiba:demon 999999 30 true");
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
 					}
 				}
 			}
@@ -211,11 +231,27 @@ public class KizukiBuffsProcedure {
 								"effect give @s minecraft:resistance 999999 3 true");
 					}
 				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s kimetsunoyaiba:demon 999999 30 true");
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
+					}
+				}
 			}
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_six")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_five")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -355,7 +391,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_one")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_1")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -523,7 +559,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_one")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_1")))
 							.isDone()
 					: false) {
 				if (new Object() {

@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Upper Moon Two",
-    "achievementDescription": "Can you become the strongest?",
+    "achievementDescription": "Can you become the strongest Upper Moon?",
     "achievementIcon": {
-      "value": "CUSTOM:IconU3"
+      "value": "CUSTOM:IconU2"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -20,6 +20,6 @@
     "parent": {
       "value": "CUSTOM:UpperMoonThree"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"33\" y=\"47\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"32\" y=\"42\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

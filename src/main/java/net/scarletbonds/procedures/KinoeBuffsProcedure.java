@@ -171,7 +171,7 @@ public class KinoeBuffsProcedure {
 							}
 							MinecraftForge.EVENT_BUS.unregister(this);
 						}
-					}.start(world, (int) 100);
+					}.start(world, (int) 50);
 				}
 			}
 			if (new Object() {

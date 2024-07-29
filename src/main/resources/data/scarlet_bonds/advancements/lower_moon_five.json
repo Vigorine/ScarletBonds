@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:upper_moon_six"
+  "parent": "scarlet_bonds:lower_moon_six"
 }
