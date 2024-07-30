@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "scarlet_bonds:logo"
+      "item": "scarlet_bonds:red_icon"
     },
     "title": {
       "translate": "advancements.doma_buff.title"
@@ -11,7 +11,7 @@
     },
     "frame": "task",
     "show_toast": true,
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "hidden": false
   },
   "criteria": {
@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:akaza_buff"
+  "parent": "scarlet_bonds:drum_buff"
 }

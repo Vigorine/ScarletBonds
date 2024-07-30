@@ -76,12 +76,13 @@ public class KizukiBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 0) {
+				}.check(entity) < 12) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager()
-									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:speed 999999 12 true");
 						}
 					}
 				}
@@ -96,12 +97,13 @@ public class KizukiBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 0) {
+				}.check(entity) < 4) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager()
-									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:jump_boost 999999 4 true");
 						}
 					}
 				}
@@ -121,8 +123,8 @@ public class KizukiBuffsProcedure {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager()
-									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect clear @s minecraft:speed");
 						}
 					}
 				}
@@ -162,13 +164,14 @@ public class KizukiBuffsProcedure {
 							{
 								Entity _ent = entity;
 								if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-									_ent.world.getServer().getCommandManager()
-											.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+									_ent.world.getServer().getCommandManager().handleCommand(
+											_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+											"effect clear @s minecraft:jump_boost");
 								}
 							}
 							MinecraftForge.EVENT_BUS.unregister(this);
 						}
-					}.start(world, (int) 100);
+					}.start(world, (int) 50);
 				}
 			}
 			if (new Object() {
@@ -182,12 +185,29 @@ public class KizukiBuffsProcedure {
 					}
 					return 0;
 				}
-			}.check(entity) < 0) {
+			}.check(entity) < 20) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager()
-								.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s minecraft:strength 999999 20 true");
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s kimetsunoyaiba:demon 999999 30 true");
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
 					}
 				}
 			}
@@ -211,11 +231,27 @@ public class KizukiBuffsProcedure {
 								"effect give @s minecraft:resistance 999999 3 true");
 					}
 				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"effect give @s kimetsunoyaiba:demon 999999 30 true");
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
+					}
+				}
 			}
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_six")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_five")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -355,7 +391,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_one")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:lower_moon_1")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -523,7 +559,7 @@ public class KizukiBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_one")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:upper_moon_1")))
 							.isDone()
 					: false) {
 				if (new Object() {
@@ -544,6 +580,323 @@ public class KizukiBuffsProcedure {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
 									"effect give @s minecraft:health_boost 999999 194 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:kaigaku_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.STRENGTH)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 22) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:strength 999999 22 true");
+						}
+					}
+				}
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.SPEED)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 14) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:speed 999999 14 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:enmu_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.STRENGTH)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 22) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:strength 999999 22 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:yahaba_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.STRENGTH)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 25) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:strength 999999 25 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:gyokko_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.SPEED)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 14) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:speed 999999 14 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:hairo_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.STRENGTH)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 22) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:strength 999999 22 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:drum_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.SPEED)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 13) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:speed 999999 13 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:doma_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.STRENGTH)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 23) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:strength 999999 23 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:zohakuten_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.SPEED)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 14) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:speed 999999 14 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:kamanue_buff")))
+							.isDone()
+					: false) {
+				if (new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.STRENGTH)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) < 21) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:strength 999999 21 true");
+						}
+					}
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
+						}
+					}
+				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:rokuro_buff")))
+							.isDone()
+					: false) {
+				if (!(new Object() {
+					int check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == Effects.NIGHT_VISION)
+									return effect.getAmplifier();
+							}
+						}
+						return 0;
+					}
+				}.check(entity) >= 2)) {
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"effect give @s minecraft:night_vision 999999 2 true");
+						}
+					}
+					{
+						Entity _ent = entity;
+						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+							_ent.world.getServer().getCommandManager().handleCommand(
+									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 2 true");
 						}
 					}
 				}

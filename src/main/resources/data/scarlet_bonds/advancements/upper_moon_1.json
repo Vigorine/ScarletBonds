@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "scarlet_bonds:logo"
+      "item": "scarlet_bonds:icon_u_1"
     },
     "title": {
-      "translate": "advancements.koku_buff.title"
+      "translate": "advancements.upper_moon_1.title"
     },
     "description": {
-      "translate": "advancements.koku_buff.descr"
+      "translate": "advancements.upper_moon_1.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,9 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "koku_buff": {
+    "upper_moon_1": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:thrall_demon"
+  "parent": "scarlet_bonds:upper_moon_two"
 }
