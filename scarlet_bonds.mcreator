@@ -970,6 +970,105 @@
       "path": "~/Items/Hashira_Icons"
     },
     {
+      "name": "LowerMoonSix",
+      "type": "achievement",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lower_moon_six",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "LowerMoonFive",
+      "type": "achievement",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lower_moon_five",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "LowerMoonFour",
+      "type": "achievement",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lower_moon_four",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "LowerMoonThree",
+      "type": "achievement",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lower_moon_three",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "LowerMoonTwo",
+      "type": "achievement",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lower_moon_two",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "UpperMoonSix",
+      "type": "achievement",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_moon_six",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "UpperMoonFive",
+      "type": "achievement",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_moon_five",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "UpperMoonFour",
+      "type": "achievement",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_moon_four",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "UpperMoonThree",
+      "type": "achievement",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_moon_three",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "UpperMoonTwo",
+      "type": "achievement",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_moon_two",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "TwelveKizuki",
+      "type": "achievement",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "twelve_kizuki",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
       "name": "IconL5",
       "type": "item",
       "sortid": 110,
@@ -1255,39 +1354,120 @@
       "path": "~/Items"
     },
     {
-      "name": "EnhancedNapeDurability",
+      "name": "KaigakuBuff",
       "type": "achievement",
-      "sortid": 186,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enhanced_nape_durability",
-      "path": "~/Advancements/Demon_Actives"
+      "registry_name": "kaigaku_buff",
+      "path": "~/Advancements/BDA_Mastery"
     },
     {
-      "name": "DemonMark",
+      "name": "EnmuBuff",
       "type": "achievement",
-      "sortid": 187,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "demon_mark",
+      "registry_name": "enmu_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "YahabaBuff",
+      "type": "achievement",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yahaba_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "GyokkoBuff",
+      "type": "achievement",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gyokko_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "HairoBuff",
+      "type": "achievement",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hairo_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "DrumBuff",
+      "type": "achievement",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drum_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "DomaBuff",
+      "type": "achievement",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doma_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "ZohakutenBuff",
+      "type": "achievement",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zohakuten_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "KamanueBuff",
+      "type": "achievement",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kamanue_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "RokuroBuff",
+      "type": "achievement",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rokuro_buff",
+      "path": "~/Advancements/BDA_Mastery"
+    },
+    {
+      "name": "SorceryMastery",
+      "type": "achievement",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sorcery_mastery",
       "path": "~/Advancements/Demon_Actives"
     },
     {
       "name": "HybridDemon",
       "type": "achievement",
-      "sortid": 188,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hybrid_demon",
       "path": "~/Advancements/Demon_Actives"
     },
     {
-      "name": "DemonRegenerationActive",
+      "name": "DemonicRegeneration",
       "type": "procedure",
-      "sortid": 189,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "demon_regeneration_active",
+      "registry_name": "demonic_regeneration",
       "metadata": {
         "dependencies": [
           {
@@ -1303,22 +1483,52 @@
       "path": "~/Procedures/Demon_Actives "
     },
     {
-      "name": "DemonicRegeneration",
-      "type": "achievement",
-      "sortid": 191,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "demonic_regeneration",
-      "path": "~/Advancements/Demon_Actives"
-    },
-    {
       "name": "MuscleGrowth",
-      "type": "achievement",
-      "sortid": 193,
+      "type": "procedure",
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "muscle_growth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "IndomitableWill",
+      "type": "achievement",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indomitable_will",
       "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "DemonMark",
+      "type": "achievement",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_mark",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "MuscleGrowthKey",
+      "type": "keybind",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muscle_growth_key",
+      "path": "~/Procedures/Demon_Actives /KeyBinds"
     },
     {
       "name": "MuscleGrowthActive",
@@ -1342,6 +1552,63 @@
       "path": "~/Procedures/Demon_Actives "
     },
     {
+      "name": "DemonicRegenerationKey",
+      "type": "keybind",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "demonic_regeneration_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "EnhancedNapeDurability",
+      "type": "achievement",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_nape_durability",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "UpperMoonOne",
+      "type": "achievement",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_moon_one",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
+      "name": "DemonRegenerationActive",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_regeneration_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "LowerMoonOne",
+      "type": "achievement",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lower_moon_one",
+      "path": "~/Advancements/Twelve_Kizuki"
+    },
+    {
       "name": "IndomitableWillActive",
       "type": "procedure",
       "sortid": 195,
@@ -1363,15 +1630,6 @@
       "path": "~/Procedures/Demon_Actives "
     },
     {
-      "name": "IndomitableWill",
-      "type": "achievement",
-      "sortid": 196,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indomitable_will",
-      "path": "~/Advancements/Demon_Actives"
-    },
-    {
       "name": "SelfDestruction",
       "type": "achievement",
       "sortid": 197,
@@ -1379,240 +1637,6 @@
       "locked_code": false,
       "registry_name": "self_destruction",
       "path": "~/Advancements/Demon_Actives"
-    },
-    {
-      "name": "SorceryMastery",
-      "type": "achievement",
-      "sortid": 198,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sorcery_mastery",
-      "path": "~/Advancements/Demon_Actives"
-    },
-    {
-      "name": "DemonicRegenerationKey",
-      "type": "keybind",
-      "sortid": 199,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "demonic_regeneration_key",
-      "path": "~/Keybinds"
-    },
-    {
-      "name": "MuscleGrowthKey",
-      "type": "keybind",
-      "sortid": 200,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "muscle_growth_key",
-      "path": "~/Keybinds"
-    },
-    {
-      "name": "TwelveKizuki",
-      "type": "achievement",
-      "sortid": 201,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "twelve_kizuki",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "LowerMoonSix",
-      "type": "achievement",
-      "sortid": 202,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lower_moon_six",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "LowerMoonFive",
-      "type": "achievement",
-      "sortid": 203,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lower_moon_five",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "LowerMoonFour",
-      "type": "achievement",
-      "sortid": 204,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lower_moon_four",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "LowerMoonThree",
-      "type": "achievement",
-      "sortid": 205,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lower_moon_three",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "LowerMoonTwo",
-      "type": "achievement",
-      "sortid": 206,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lower_moon_two",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "LowerMoonOne",
-      "type": "achievement",
-      "sortid": 207,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lower_moon_one",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "UpperMoonSix",
-      "type": "achievement",
-      "sortid": 208,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upper_moon_six",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "UpperMoonFive",
-      "type": "achievement",
-      "sortid": 209,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upper_moon_five",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "UpperMoonFour",
-      "type": "achievement",
-      "sortid": 210,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upper_moon_four",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "UpperMoonThree",
-      "type": "achievement",
-      "sortid": 211,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upper_moon_three",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "UpperMoonTwo",
-      "type": "achievement",
-      "sortid": 212,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upper_moon_two",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "UpperMoonOne",
-      "type": "achievement",
-      "sortid": 213,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upper_moon_one",
-      "path": "~/Advancements/Twelve_Kizuki"
-    },
-    {
-      "name": "KaigakuBuff",
-      "type": "achievement",
-      "sortid": 214,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kaigaku_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "EnmuBuff",
-      "type": "achievement",
-      "sortid": 215,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enmu_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "YahabaBuff",
-      "type": "achievement",
-      "sortid": 216,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yahaba_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "GyokkoBuff",
-      "type": "achievement",
-      "sortid": 217,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gyokko_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "HairoBuff",
-      "type": "achievement",
-      "sortid": 218,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hairo_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "DrumBuff",
-      "type": "achievement",
-      "sortid": 219,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drum_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "DomaBuff",
-      "type": "achievement",
-      "sortid": 220,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "doma_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "ZohakutenBuff",
-      "type": "achievement",
-      "sortid": 221,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "zohakuten_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "KamanueBuff",
-      "type": "achievement",
-      "sortid": 222,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kamanue_buff",
-      "path": "~/Advancements/BDA_Mastery"
-    },
-    {
-      "name": "RokuroBuff",
-      "type": "achievement",
-      "sortid": 223,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rokuro_buff",
-      "path": "~/Advancements/BDA_Mastery"
     }
   ],
   "variable_elements": [],
@@ -1625,15 +1649,15 @@
       "item.scarlet_bonds.icon_l_2": "Icon L 2",
       "advancements.doma_buff.title": "Doma Buff",
       "advancements.thrall_demon.title": "Thrall Demon",
-      "advancements.feral_demon_ii.title": "Feral Demon II",
       "item.scarlet_bonds.icon_l_5": "Icon L 5",
+      "advancements.feral_demon_ii.title": "Feral Demon II",
       "advancements.rokuro_buff.descr": "Your efficiency is optimised",
-      "advancements.hairo_buff.descr": "Your strength and speed are exceptional",
-      "advancements.kocho_buff.descr": "Your breathing and strength is optimised ",
+      "advancements.hairo_buff.descr": "Your strength and speed are exceptional ",
       "item.scarlet_bonds.red_icon": "Red Icon",
+      "advancements.kocho_buff.descr": "Your breathing and strength is optimised ",
       "advancements.kanawo_buff.title": "Kanawo Buff",
-      "advancements.kinoe.descr": "Can you become a Hashira?",
       "advancements.thunder_hashira.title": "Thunder Hashira",
+      "advancements.kinoe.descr": "Can you become a Hashira?",
       "advancements.upper_moon_four.title": "Upper Moon Four",
       "advancements.drum_buff.descr": "Your strength and speed are enhanced",
       "advancements.water_hashira.descr": "Become the Water Hashira",
@@ -1660,16 +1684,17 @@
       "advancements.mizunoto.descr": "Enlist into the Demon Slayer Corps",
       "item.scarlet_bonds.blue_icon": "Blue Icon",
       "advancements.upper_moon_one.title": "Upper Moon One",
-      "advancements.twelve_kizuki.descr": "Join the Twelve Kizuki.",
+      "advancements.twelve_kizuki.descr": "Join the Twelve Kizuki ",
       "advancements.kinoto.descr": "Rank up to Kinoto",
       "advancements.lower_moon_four.descr": "Rank up in the Twelve Kizuki",
       "advancements.himejima_buff.descr": "Your strength and durability is exceptional ",
       "advancements.welcome.descr": "Welcome to the Scarlet Bonds mod",
       "advancements.upper_moon_four.descr": "Rank up in the Upper Moons",
       "advancements.apex_demon.descr": "Are you strong enough to Join the Twelve Kizuki? ",
+      "advancements.lower_moon_1.title": "Lower Moon 1",
       "advancements.hunter_demon_ii.title": "Hunter Demon II",
-      "item.scarlet_bonds.uniform_uzui": "Uniform Uzui",
       "advancements.moon_hashira.descr": "Become the Moon Hashira",
+      "item.scarlet_bonds.uniform_uzui": "Uniform Uzui",
       "advancements.demonic_regeneration.title": "Demonic Regeneration",
       "advancements.self_destruction.descr": "Channel your energy into a devastating explosion in exchange for a large portion of your health ",
       "item.scarlet_bonds.blood": "Blood",
@@ -1680,7 +1705,6 @@
       "item.scarlet_bonds.uniform_tomioka": "Uniform Tomioka",
       "advancements.lower_moon_two.title": "Lower Moon Two",
       "advancements.tsuchinoto.descr": "Rank up to Tsuchinoto",
-      "advancements.enhanced_nape_durability.title": "Enhanced Nape Durability",
       "advancements.kanawo_buff.descr": "Your strength is execptional ",
       "advancements.tomiyoka_buff.descr": "Your strength is exceptional ",
       "advancements.kinoe.title": "Kinoe",
@@ -1705,12 +1729,13 @@
       "advancements.demon_mark.descr": "Awakens a supernatural mark on your body, amplifying your strength, speed, and combat skills.",
       "item.scarlet_bonds.uniform_human_kokushibo": "Uniform Human Kokushibo",
       "advancements.sorcery_mastery.descr": "Your deep mastery over Blood Demon Arts enhances your control and efficiency, drastically shortening the cooldown of your demonic abilities.",
-      "key.categories.ScarletBonds": "Scarlet Bonds",
       "advancements.upper_moon_five.title": "Upper Moon Five",
+      "key.categories.ScarletBonds": "Scarlet Bonds",
       "item.scarlet_bonds.icon_u_2": "Icon U 2",
       "advancements.thrall_demon_ii.descr": "Become stronger ",
-      "item.scarlet_bonds.icon_u_3": "Icon U 3",
+      "advancements.upper_moon_1.descr": "The strongest Twelve Kizuki member.",
       "advancements.lower_moon_three.title": "Lower Moon Three",
+      "item.scarlet_bonds.icon_u_3": "Icon U 3",
       "item.scarlet_bonds.icon_u_4": "Icon U 4",
       "item.scarlet_bonds.uniform_zenitzu": "Uniform Zenitzu",
       "item.scarlet_bonds.icon_u_5": "Icon U 5",
@@ -1744,11 +1769,11 @@
       "advancements.twelve_kizuki.title": "Twelve Kizuki",
       "advancements.mizunoe.descr": "Rank up to Mizunoe",
       "item.scarlet_bonds.uniform_inosuke": "Uniform Inosuke",
-      "advancements.kaigaku_buff.descr": "Your strength and speed is exceptional",
+      "advancements.kaigaku_buff.descr": "Your strength and speed are exceptional ",
       "item.scarlet_bonds.hand_demon": "Hand Demon",
       "advancements.drum_buff.title": "Drum Buff",
       "advancements.water_hashira.title": "Water Hashira",
-      "advancements.zohakuten_buff.descr": "Your speed and durability is exceptional",
+      "advancements.zohakuten_buff.descr": "Your speed is enhanced",
       "advancements.sound_hashira.title": "Sound Hashira",
       "advancements.hashira.title": "Hashira",
       "advancements.hunter_demon.title": "Hunter Demon",
@@ -1769,7 +1794,7 @@
       "advancements.muscle_growth.descr": "Rapidly grow muscles, gain a temporary strength and speed buff, before straining your body. ",
       "key.scarlet_bonds.demonic_regeneration_key": "Demonic Regeneration Key",
       "advancements.hairo_buff.title": "Hairo Buff",
-      "advancements.yahaba_buff.descr": "Your strength is exceptional",
+      "advancements.yahaba_buff.descr": "Your strength is exceptional ",
       "advancements.doma_buff.descr": "Your strength is exceptional",
       "advancements.kanae_buff.title": "Kanae Buff",
       "advancements.rengoku_buff.title": "Rengoku Buff",
@@ -1782,30 +1807,32 @@
       "item.scarlet_bonds.uniform_rengoku": "Uniform Rengoku",
       "advancements.sorcery_mastery.title": "Sorcery Mastery",
       "advancements.hinoto.title": "Hinoto",
-      "advancements.demonic_regeneration.descr": "Accelerate your healing factor. Removing red sword and all negative effects. ",
       "advancements.upper_moon_five.descr": "Rank up in the Upper Moons",
+      "advancements.demonic_regeneration.descr": "Accelerate your healing factor. Removing red sword and all negative effects. ",
       "advancements.lower_moon_three.descr": "Rank up in the Twelve Kizuki",
+      "advancements.upper_moon_1.title": "Upper Moon 1",
       "advancements.tanjiro_buff.descr": "Your breathing is optimised ",
       "advancements.demon_mark.title": "Demon Mark",
       "advancements.lower_moon_six.descr": "You are now a part of the Twelve Kizuki",
       "advancements.feral_demon_ii.descr": "Become stronger ",
       "advancements.mizunoto.title": "Mizunoto",
-      "advancements.self_destruction.title": "Self Destruction",
       "advancements.rokuro_buff.title": "Rokuro Buff",
-      "advancements.enmu_buff.descr": "Your strength is exceptional",
+      "advancements.self_destruction.title": "Self Destruction",
+      "advancements.enmu_buff.descr": "Your strength is exceptional ",
       "advancements.serpent_hashira.title": "Serpent Hashira",
       "advancements.indomitable_will.title": "Indomitable Will",
+      "advancements.lower_moon_1.descr": "Do you have what it takes to join the ranks of the Upper Moons?",
       "advancements.beast_hashira.descr": "Become the Beast Hashira",
       "advancements.sun_hashira.title": "Sun Hashira",
+      "advancements.upper_moon_three.descr": "Rank up in the Upper Moons",
       "advancements.iguro_buff.title": "Iguro Buff",
-      "advancements.upper_moon_three.descr": "Join the ranks of the 3 strongest Upper Moons.",
       "item.scarlet_bonds.uniform_mitsuri": "Uniform Mitsuri",
       "advancements.stone_hashira.title": "Stone Hashira",
       "advancements.upper_moon_one.descr": "The strongest of the Twelve Kizuki.",
       "item.scarlet_bonds.sabito_mask": "Sabito Mask",
       "advancements.tsuchinoe.descr": "Rank up to Tsuchinoe ",
       "advancements.mist_hashira.title": "Mist Hashira",
-      "advancements.gyokko_buff.descr": "Your speed is enhanced ",
+      "advancements.gyokko_buff.descr": "Your speed is enhanced",
       "advancements.thunder_hashira.descr": "Become the Thunder Hashira",
       "item.scarlet_bonds.dice_steak": "Dice Steak",
       "advancements.love_hashira.title": "Love Hashira",
@@ -1814,7 +1841,6 @@
       "advancements.shinazugawa_buff.title": "Shinazugawa Buff",
       "advancements.wind_hashira.title": "Wind Hashira",
       "advancements.moon_buff.title": "Moon Buff",
-      "advancements.enhanced_nape_durability.descr": "Fortify the nape of your neck to avoid lethal damage for 2 seconds, in exchange for the ability to move. ",
       "advancements.upper_moon_two.title": "Upper Moon Two",
       "advancements.uzui_buff.title": "Uzui Buff",
       "item.scarlet_bonds.spider_head": "Spider Head",
@@ -1920,7 +1946,6 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.scarletbonds",
     "lockBaseModFiles": false
   },

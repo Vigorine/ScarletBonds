@@ -1,28 +1,9 @@
 package net.scarletbonds.procedures;
 
-import net.scarletbonds.ScarletBondsMod;
-
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
-import java.util.HashMap;
+import net.minecraftforge.eventbus.api.Event;
 
 public class IndomitableWillActiveProcedure {
+
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -58,8 +39,10 @@ public class IndomitableWillActiveProcedure {
 				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure IndomitableWillActive!");
 			return;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
+
 		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -75,6 +58,7 @@ public class IndomitableWillActiveProcedure {
 							.setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1) * 0.25));
 				entity.getPersistentData().putBoolean("CooldownIW", (true));
 				new Object() {
+
 					private int ticks = 0;
 					private float waitTicks;
 					private IWorld world;
@@ -98,6 +82,7 @@ public class IndomitableWillActiveProcedure {
 						entity.getPersistentData().putBoolean("CooldownIW", (false));
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
+
 				}.start(world, (int) 6000);
 			} else {
 				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
@@ -106,4 +91,5 @@ public class IndomitableWillActiveProcedure {
 			}
 		}
 	}
+
 }

@@ -1,21 +1,6 @@
 package net.scarletbonds.procedures;
 
-import net.scarletbonds.ScarletBondsMod;
-
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
+import net.minecraftforge.eventbus.api.Event;
 
 public class DemonRegenerationActiveProcedure {
 
@@ -30,8 +15,10 @@ public class DemonRegenerationActiveProcedure {
 				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure DemonRegenerationActive!");
 			return;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
+
 		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -121,6 +108,7 @@ public class DemonRegenerationActiveProcedure {
 				}
 				entity.getPersistentData().putBoolean("CooldownDR", (true));
 				new Object() {
+
 					private int ticks = 0;
 					private float waitTicks;
 					private IWorld world;
@@ -144,6 +132,7 @@ public class DemonRegenerationActiveProcedure {
 						entity.getPersistentData().putBoolean("CooldownDR", (false));
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
+
 				}.start(world, (int) 4800);
 			} else {
 				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
@@ -152,4 +141,5 @@ public class DemonRegenerationActiveProcedure {
 			}
 		}
 	}
+
 }
