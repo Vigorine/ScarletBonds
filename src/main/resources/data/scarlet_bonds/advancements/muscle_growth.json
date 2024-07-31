@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "scarlet_bonds:red_icon"
+      "item": "scarlet_bonds:red_2_icon"
     },
     "title": {
       "translate": "advancements.muscle_growth.title"
@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:demonic_regeneration"
+  "parent": "scarlet_bonds:self_destruction"
 }

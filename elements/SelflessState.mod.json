@@ -1,0 +1,25 @@
+{
+  "_fv": 34,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Selfless State",
+    "achievementDescription": "Activating the Selfless State boosts your combat abilities and stamina, driven by your focus on protecting others, allowing you to achieve extraordinary feats.",
+    "achievementIcon": {
+      "value": "CUSTOM:Blue2Icon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:TotalConcentrationBreathingConstant"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"29\" y=\"53\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

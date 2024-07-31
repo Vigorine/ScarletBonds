@@ -34,7 +34,7 @@ public class MuscleGrowthKeyKeyBinding extends ScarletBondsModElements.ModElemen
 	private KeyBinding keys;
 
 	public MuscleGrowthKeyKeyBinding(ScarletBondsModElements instance) {
-		super(instance, 215);
+		super(instance, 242);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
@@ -42,7 +42,7 @@ public class MuscleGrowthKeyKeyBinding extends ScarletBondsModElements.ModElemen
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.scarlet_bonds.muscle_growth_key", GLFW.GLFW_KEY_C, "key.categories.ScarletBonds");
+		keys = new KeyBinding("key.scarlet_bonds.muscle_growth_key", GLFW.GLFW_KEY_G, "key.categories.DemonActives");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

@@ -1,0 +1,25 @@
+{
+  "_fv": 34,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Marechi Blood",
+    "achievementDescription": "Harness the unique properties of your Marechi blood, a rare and powerful type of blood that inflicts harm upon yourself while driving demons into a frenzied bloodlust.",
+    "achievementIcon": {
+      "value": "CUSTOM:Blue2Icon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:RepetitiveActionTechnique"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"29\" y=\"33\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

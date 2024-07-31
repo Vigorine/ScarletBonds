@@ -35,7 +35,7 @@ public class DemonRegenerationActiveProcedure {
 		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-								.getAdvancement(new ResourceLocation("scarlet_bonds:deleted_mod_element")))
+								.getAdvancement(new ResourceLocation("scarlet_bonds:demonic_regeneration")))
 						.isDone()
 				: false) {
 			if (entity.getPersistentData().getBoolean("CooldownDR") == false) {
@@ -116,7 +116,7 @@ public class DemonRegenerationActiveProcedure {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s regeneration 30 5");
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect give @s regeneration 30 4");
 					}
 				}
 				entity.getPersistentData().putBoolean("CooldownDR", (true));

@@ -1,0 +1,25 @@
+{
+  "_fv": 34,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Total Concentration Breathing Constant",
+    "achievementDescription": "Maintain focused breathing to continuously enhance your strength, speed, and reflexes, ensuring constant peak performance.",
+    "achievementIcon": {
+      "value": "CUSTOM:Blue2Icon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:TotalConcentrationBreathing"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"37\" y=\"56\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

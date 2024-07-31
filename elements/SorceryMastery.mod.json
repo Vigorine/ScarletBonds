@@ -5,7 +5,7 @@
     "achievementName": "Sorcery Mastery",
     "achievementDescription": "Your deep mastery over Blood Demon Arts enhances your control and efficiency, drastically shortening the cooldown of your demonic abilities.",
     "achievementIcon": {
-      "value": "CUSTOM:RedIcon"
+      "value": "CUSTOM:Red2Icon"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -18,7 +18,7 @@
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:SelfDestruction"
+      "value": "CUSTOM:ApexDemon"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"49\" y=\"65\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }

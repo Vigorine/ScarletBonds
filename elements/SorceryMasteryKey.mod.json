@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "J",
+    "keyBindingName": "Sorcery Mastery",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SorceryMasteryActive"
+    }
+  }
+}

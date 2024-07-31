@@ -2,8 +2,8 @@
   "_fv": 34,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "C",
-    "keyBindingName": "Muscle Growth Key",
+    "triggerKey": "G",
+    "keyBindingName": "Muscle Growth",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
       "name": "MuscleGrowthActive"

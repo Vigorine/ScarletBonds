@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:blue_2_icon"
+    },
+    "title": {
+      "translate": "advancements.total_concentration_breathing_constant.title"
+    },
+    "description": {
+      "translate": "advancements.total_concentration_breathing_constant.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "total_concentration_breathing_constant": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:total_concentration_breathing"
+}

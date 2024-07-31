@@ -2,8 +2,8 @@
   "_fv": 34,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "X",
-    "keyBindingName": "Demonic Regeneration Key",
+    "triggerKey": "C",
+    "keyBindingName": "Demonic Regeneration",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
       "name": "DemonRegenerationActive"

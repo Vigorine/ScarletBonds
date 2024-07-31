@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Y",
+    "keyBindingName": "Fighting Spirit",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "FightingSpiritActive"
+    }
+  }
+}

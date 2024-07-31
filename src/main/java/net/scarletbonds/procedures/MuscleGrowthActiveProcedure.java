@@ -35,12 +35,12 @@ public class MuscleGrowthActiveProcedure {
 		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-								.getAdvancement(new ResourceLocation("scarlet_bonds:deleted_mod_element")))
+								.getAdvancement(new ResourceLocation("scarlet_bonds:muscle_growth")))
 						.isDone()
 				: false) {
 			if (entity.getPersistentData().getBoolean("CooldownMG") == false) {
 				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Muscle Growth activated"), (false));
+					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Muscle Growth activated"), (true));
 				}
 				if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 						? ((ServerPlayerEntity) entity).getAdvancements()
@@ -144,10 +144,10 @@ public class MuscleGrowthActiveProcedure {
 						entity.getPersistentData().putBoolean("CooldownMG", (false));
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
-				}.start(world, (int) 1800);
+				}.start(world, (int) 2400);
 			} else {
 				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Your muscles are still repairing"), (false));
+					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Your muscles are still repairing"), (true));
 				}
 			}
 		}

@@ -5,7 +5,7 @@
     "achievementName": "Hybrid Demon",
     "achievementDescription": "You can use a breathing style, and are able to fuse demon power into nichirin blade. ",
     "achievementIcon": {
-      "value": "CUSTOM:RedIcon"
+      "value": "CUSTOM:Red2Icon"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -18,7 +18,7 @@
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:DemonMark"
+      "value": "CUSTOM:SorceryMastery"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"42\" y=\"65\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }

@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "BACKSLASH",
+    "keyBindingName": "Kakushi",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "KakushiActive"
+    }
+  }
+}

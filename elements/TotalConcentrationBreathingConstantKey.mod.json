@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "O",
+    "keyBindingName": "Total Concentration Breathing Constant",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "TotalConcentrationBreathingConstantActive"
+    }
+  }
+}

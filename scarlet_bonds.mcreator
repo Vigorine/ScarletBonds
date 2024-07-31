@@ -1570,9 +1570,379 @@
       "path": "~/Procedures/Demon_Actives "
     },
     {
+      "name": "DemonicRegeneration",
+      "type": "achievement",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonic_regeneration",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "SelfDestruction",
+      "type": "achievement",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "self_destruction",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "MuscleGrowth",
+      "type": "achievement",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muscle_growth",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "SorceryMasteryActive",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sorcery_mastery_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "SelfDestructionActive",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "self_destruction_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "HybridDemonActive",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hybrid_demon_active",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "EnhancedNapeDurabilityActive",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_nape_durability_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "TotalConcentrationBreathingActive",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "total_concentration_breathing_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "TotalConcentrationBreathingConstantActive",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "total_concentration_breathing_constant_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "SelflessStateActive",
+      "type": "procedure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selfless_state_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "SlayerMarkActive",
+      "type": "procedure",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slayer_mark_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "RepetitiveActionTechniqueActive",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repetitive_action_technique_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "MarechiBloodActive",
+      "type": "procedure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marechi_blood_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "KakushiActive",
+      "type": "procedure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakushi_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "FightingSpiritActive",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fighting_spirit_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "TotalConcentrationBreathing",
+      "type": "achievement",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "total_concentration_breathing",
+      "path": "~/Advancements/Slayer_Actives"
+    },
+    {
+      "name": "TotalConcentrationBreathingConstant",
+      "type": "achievement",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "total_concentration_breathing_constant",
+      "path": "~/Advancements/Slayer_Actives"
+    },
+    {
+      "name": "SelflessState",
+      "type": "achievement",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selfless_state",
+      "path": "~/Advancements/Slayer_Actives"
+    },
+    {
+      "name": "SlayerMark",
+      "type": "achievement",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slayer_mark",
+      "path": "~/Advancements/Slayer_Actives"
+    },
+    {
+      "name": "RepetitiveActionTechnique",
+      "type": "achievement",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repetitive_action_technique",
+      "path": "~/Advancements/Slayer_Actives"
+    },
+    {
+      "name": "MarechiBlood",
+      "type": "achievement",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marechi_blood",
+      "path": "~/Advancements/Slayer_Actives"
+    },
+    {
+      "name": "Kakushi",
+      "type": "achievement",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakushi",
+      "path": "~/Advancements/Slayer_Actives"
+    },
+    {
+      "name": "FightingSpirit",
+      "type": "achievement",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fighting_spirit",
+      "path": "~/Advancements/Slayer_Actives"
+    },
+    {
       "name": "DemonicRegenerationKey",
       "type": "keybind",
-      "sortid": 214,
+      "sortid": 241,
       "compiles": true,
       "locked_code": true,
       "registry_name": "demonic_regeneration_key",
@@ -1581,11 +1951,131 @@
     {
       "name": "MuscleGrowthKey",
       "type": "keybind",
-      "sortid": 215,
+      "sortid": 242,
       "compiles": true,
       "locked_code": true,
       "registry_name": "muscle_growth_key",
       "path": "~/Keybinds"
+    },
+    {
+      "name": "DemonMarkKey",
+      "type": "keybind",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "demon_mark_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "SorceryMasteryKey",
+      "type": "keybind",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sorcery_mastery_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "EnhancedNapeDurabilityKey",
+      "type": "keybind",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "enhanced_nape_durability_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "TotalConcentrationBreathingKey",
+      "type": "keybind",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "total_concentration_breathing_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "TotalConcentrationBreathingConstantKey",
+      "type": "keybind",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "total_concentration_breathing_constant_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "SlayerMarkKey",
+      "type": "keybind",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "slayer_mark_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "MarechiBloodKey",
+      "type": "keybind",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "marechi_blood_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "KakushiKey",
+      "type": "keybind",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kakushi_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "FightingSpiritKey",
+      "type": "keybind",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fighting_spirit_key",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "Blue2Icon",
+      "type": "item",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_2_icon",
+      "path": "~/Items"
+    },
+    {
+      "name": "Red2Icon",
+      "type": "item",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_2_icon",
+      "path": "~/Items"
+    },
+    {
+      "name": "DemonMarkActive",
+      "type": "procedure",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_mark_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Demon_Actives "
     }
   ],
   "variable_elements": [],
@@ -1598,15 +2088,15 @@
       "item.scarlet_bonds.icon_l_2": "Icon L 2",
       "advancements.doma_buff.title": "Doma Buff",
       "advancements.thrall_demon.title": "Thrall Demon",
-      "item.scarlet_bonds.icon_l_5": "Icon L 5",
       "advancements.feral_demon_ii.title": "Feral Demon II",
+      "item.scarlet_bonds.icon_l_5": "Icon L 5",
       "advancements.rokuro_buff.descr": "Your efficiency is optimised",
       "advancements.hairo_buff.descr": "Your strength and speed are exceptional",
-      "item.scarlet_bonds.red_icon": "Red Icon",
       "advancements.kocho_buff.descr": "Your breathing and strength is optimised ",
+      "item.scarlet_bonds.red_icon": "Red Icon",
       "advancements.kanawo_buff.title": "Kanawo Buff",
-      "advancements.thunder_hashira.title": "Thunder Hashira",
       "advancements.kinoe.descr": "Can you become a Hashira?",
+      "advancements.thunder_hashira.title": "Thunder Hashira",
       "advancements.upper_moon_four.title": "Upper Moon Four",
       "advancements.drum_buff.descr": "Your strength and speed are enhanced",
       "advancements.water_hashira.descr": "Become the Water Hashira",
@@ -1618,12 +2108,18 @@
       "item.scarlet_bonds.demon_eyes": "Demon Eyes",
       "item.scarlet_bonds.uniform_tanjiro": "Uniform Tanjiro",
       "advancements.moon_buff.descr": "Your breathing is optimised ",
+      "advancements.slayer_mark.title": "Slayer Mark",
       "advancements.twin_horned_demon.title": "Twin Horned Demon",
       "advancements.uzui_buff.descr": "You are exceptionally fast",
       "item.scarlet_bonds.uniform_kocho": "Kocho_Icon",
       "advancements.sun_hashira.descr": "Become the Sun Hashira",
+      "advancements.total_concentration_breathing.title": "Total Concentration Breathing",
+      "advancements.repetitive_action_technique.descr": "Utilise repetitive actions to increase attack precision and effectiveness.",
       "advancements.inosuke_buff.descr": "Your body is in peak condition ",
+      "key.scarlet_bonds.kakushi_key": "Kakushi",
+      "advancements.kakushi.descr": "Utilise the specialised medical techniques and knowledge of the Kakushi to both heal allies and poison enemies.",
       "item.scarlet_bonds.slayer_uniform": "Slayer Uniform",
+      "key.categories.DemonActives": "Demon Actives",
       "advancements.kaigaku_buff.title": "Kaigaku Buff",
       "advancements.sound_hashira.descr": "Become the Sound Hashira",
       "advancements.ravager_demon.descr": "Become stronger ",
@@ -1638,13 +2134,16 @@
       "advancements.lower_moon_four.descr": "Rank up in the Twelve Kizuki",
       "advancements.himejima_buff.descr": "Your strength and durability is exceptional ",
       "advancements.welcome.descr": "Welcome to the Scarlet Bonds mod",
+      "key.scarlet_bonds.total_concentration_breathing_key": "Total Concentration Breathing",
       "advancements.upper_moon_four.descr": "Rank up in the Upper Moons",
+      "key.scarlet_bonds.sorcery_mastery_key": "Sorcery Mastery",
       "advancements.apex_demon.descr": "Are you strong enough to Join the Twelve Kizuki? ",
       "advancements.lower_moon_1.title": "Lower Moon 1",
       "advancements.hunter_demon_ii.title": "Hunter Demon II",
-      "item.scarlet_bonds.uniform_uzui": "Uniform Uzui",
       "advancements.moon_hashira.descr": "Become the Moon Hashira",
+      "item.scarlet_bonds.uniform_uzui": "Uniform Uzui",
       "advancements.demonic_regeneration.title": "Demonic Regeneration",
+      "advancements.self_destruction.descr": "Channel your demonic energy into a devastating explosion upon death, taking down enemies and causing massive destruction around you.",
       "item.scarlet_bonds.blood": "Blood",
       "advancements.kamanue_buff.descr": "Your strength and efficiency is enhanced",
       "advancements.thrall_demon.descr": "Turn into a Demon",
@@ -1653,8 +2152,9 @@
       "item.scarlet_bonds.uniform_tomioka": "Uniform Tomioka",
       "advancements.lower_moon_two.title": "Lower Moon Two",
       "advancements.tsuchinoto.descr": "Rank up to Tsuchinoto",
-      "advancements.enhanced_nape_durability.title": "Enhanced Nape Durability",
+      "advancements.marechi_blood.title": "Marechi Blood",
       "advancements.kanawo_buff.descr": "Your strength is execptional ",
+      "advancements.enhanced_nape_durability.title": "Enhanced Nape Durability",
       "advancements.tomiyoka_buff.descr": "Your strength is exceptional ",
       "advancements.kinoe.title": "Kinoe",
       "advancements.zenitsu_buff.title": "Zenitsu Buff",
@@ -1668,18 +2168,21 @@
       "advancements.lower_moon_one.title": "Lower Moon One",
       "advancements.mitsuri_buff.descr": "You are exceptionally durable ",
       "advancements.muscle_growth.title": "Muscle Growth",
-      "\"key.categories.ScarletBonds\"": "",
+      "key.scarlet_bonds.total_concentration_breathing_constant_key": "Total Concentration Breathing Constant",
+      "item.scarlet_bonds.red_2_icon": "Red 2 Icon",
       "advancements.mist_hashira.descr": "Become the Mist Hashira",
       "item.scarlet_bonds.icon_u_1": "Icon U 1",
+      "item.scarlet_bonds.blue_2_icon": "Blue 2 Icon",
       "advancements.love_hashira.descr": "Become the Love Hashira",
       "advancements.tanjiro_buff.title": "Tanjiro Buff",
       "advancements.hunter_demon.descr": "Become a hunter demon ",
+      "advancements.repetitive_action_technique.title": "Repetitive Action Technique",
       "advancements.insect_hashira.descr": "Become the Insect Hashira",
       "advancements.demon_mark.descr": "Awakens a supernatural mark on your body, amplifying your strength, speed, and combat skills.",
       "item.scarlet_bonds.uniform_human_kokushibo": "Uniform Human Kokushibo",
       "advancements.sorcery_mastery.descr": "Your deep mastery over Blood Demon Arts enhances your control and efficiency, drastically shortening the cooldown of your demonic abilities.",
+      "advancements.selfless_state.descr": "Activating the Selfless State boosts your combat abilities and stamina, driven by your focus on protecting others, allowing you to achieve extraordinary feats.",
       "advancements.upper_moon_five.title": "Upper Moon Five",
-      "key.categories.ScarletBonds": "Scarlet Bonds",
       "item.scarlet_bonds.icon_u_2": "Icon U 2",
       "advancements.thrall_demon_ii.descr": "Become stronger ",
       "advancements.upper_moon_1.descr": "The strongest Twelve Kizuki member.",
@@ -1690,12 +2193,16 @@
       "item.scarlet_bonds.icon_u_5": "Icon U 5",
       "item.scarlet_bonds.icon_u_6": "Icon U 6",
       "advancements.enmu_buff.title": "Enmu Buff",
+      "key.scarlet_bonds.demon_mark_key": "Demon Mark",
       "advancements.serpent_hashira.descr": "Become the Serpent Hashira",
       "advancements.stone_hashira.descr": "Become the Stone Hashira",
+      "advancements.kakushi.title": "Kakushi",
       "advancements.lower_moon_two.descr": "Rank up in the Twelve Kizuki",
       "item.scarlet_bonds.uniform_shinazugawa": "Uniform Shinazugawa",
+      "advancements.marechi_blood.descr": "Harness the unique properties of your Marechi blood, a rare and powerful type of blood that inflicts harm upon yourself while driving demons into a frenzied bloodlust.",
       "advancements.zenitsu_buff.descr": "Your breathing, strength and durabilty are all optimised ",
       "advancements.lower_moon_six.title": "Lower Moon Six",
+      "key.scarlet_bonds.fighting_spirit_key": "Fighting Spirit",
       "advancements.yahaba_buff.title": "Yahaba Buff",
       "advancements.tokito_buff.title": "Tokito Buff",
       "advancements.rengoku_buff.descr": "Your breathing is optimised ",
@@ -1716,6 +2223,8 @@
       "advancements.zohakuten_buff.title": "Zohakuten Buff",
       "advancements.kanoto.title": "Kanoto",
       "advancements.twelve_kizuki.title": "Twelve Kizuki",
+      "advancements.slayer_mark.descr": "Awakens a supernatural mark on your body, amplifying your strength, speed, and combat skills.",
+      "advancements.fighting_spirit.descr": "Tap into an indomitable fighting spirit that refuses to yield even in the face of death. This ability grants a final surge of power and resilience, allowing you to continue fighting fiercely for a brief period despite fatal injuries.",
       "advancements.mizunoe.descr": "Rank up to Mizunoe",
       "item.scarlet_bonds.uniform_inosuke": "Uniform Inosuke",
       "advancements.kaigaku_buff.descr": "Your strength and speed is exceptional",
@@ -1723,6 +2232,7 @@
       "advancements.drum_buff.title": "Drum Buff",
       "advancements.water_hashira.title": "Water Hashira",
       "advancements.zohakuten_buff.descr": "Your speed and durability is exceptional",
+      "key.scarlet_bonds.slayer_mark_key": "Slayer Mark Key",
       "advancements.sound_hashira.title": "Sound Hashira",
       "advancements.hashira.title": "Hashira",
       "advancements.hunter_demon.title": "Hunter Demon",
@@ -1731,6 +2241,7 @@
       "item.scarlet_bonds.iguro_uniform": "Iguro_Icon",
       "advancements.kanoe.title": "Kanoe",
       "advancements.tsuchinoe.title": "Tsuchinoe",
+      "advancements.total_concentration_breathing_constant.title": "Total Concentration Breathing Constant",
       "advancements.kanae_buff.descr": "Your strength is exceptional",
       "advancements.feral_demon.title": "Feral Demon",
       "advancements.hinoto.descr": "Rank up to Hinoto",
@@ -1738,10 +2249,12 @@
       "advancements.mizunoe.title": "Mizunoe",
       "advancements.kanoto.descr": "Rank up to Kanoto ",
       "advancements.lower_moon_one.descr": "Can you join the Upper Ranks?",
+      "key.categories.SlayerActives": "Slayer Actives",
       "advancements.indomitable_will.descr": "On death, regrow your head and regenerate 25% of your max HP.",
       "advancements.mitsuri_buff.title": "Mitsuri Buff",
-      "advancements.muscle_growth.descr": "Rapidly grow muscles, gain a temporary strength and speed buff, before straining your body. ",
-      "key.scarlet_bonds.demonic_regeneration_key": "Demonic Regeneration Key",
+      "advancements.muscle_growth.descr": "Rapidly grow muscles, boosting strength and durability for enhanced combat effectiveness.",
+      "key.scarlet_bonds.demonic_regeneration_key": "Demonic Regeneration",
+      "key.scarlet_bonds.marechi_blood_key": "Marechi Blood Key",
       "advancements.hairo_buff.title": "Hairo Buff",
       "advancements.yahaba_buff.descr": "Your strength is exceptional",
       "advancements.doma_buff.descr": "Your strength is exceptional",
@@ -1749,6 +2262,7 @@
       "advancements.rengoku_buff.title": "Rengoku Buff",
       "advancements.feral_demon.descr": "Become a feral demon ",
       "advancements.welcome.title": "Scarlet Bonds",
+      "advancements.selfless_state.title": "Selfless State",
       "advancements.kanoe.descr": "Rank up to Kanoe ",
       "advancements.insect_hashira.title": "Insect Hashira",
       "advancements.upper_moon_six.descr": "You\u0027ve become the weakest Upper Moon. Will you rise and prove your worth?",
@@ -1757,15 +2271,17 @@
       "advancements.sorcery_mastery.title": "Sorcery Mastery",
       "advancements.hinoto.title": "Hinoto",
       "advancements.upper_moon_five.descr": "Rank up in the Upper Moons",
-      "advancements.demonic_regeneration.descr": "Accelerate your healing factor. Removing red sword and all negative effects. ",
+      "advancements.demonic_regeneration.descr": "Remove all negative effects and drastically accelerate the healing of injuries over time.",
       "advancements.lower_moon_three.descr": "Rank up in the Twelve Kizuki",
       "advancements.upper_moon_1.title": "Upper Moon 1",
       "advancements.tanjiro_buff.descr": "Your breathing is optimised ",
       "advancements.demon_mark.title": "Demon Mark",
       "advancements.lower_moon_six.descr": "You are now a part of the Twelve Kizuki",
+      "advancements.total_concentration_breathing_constant.descr": "Maintain focused breathing to continuously enhance your strength, speed, and reflexes, ensuring constant peak performance.",
       "advancements.feral_demon_ii.descr": "Become stronger ",
       "advancements.mizunoto.title": "Mizunoto",
       "advancements.rokuro_buff.title": "Rokuro Buff",
+      "advancements.self_destruction.title": "Self Destruction",
       "advancements.enmu_buff.descr": "Your strength is exceptional",
       "advancements.serpent_hashira.title": "Serpent Hashira",
       "advancements.indomitable_will.title": "Indomitable Will",
@@ -1777,14 +2293,16 @@
       "item.scarlet_bonds.uniform_mitsuri": "Uniform Mitsuri",
       "advancements.stone_hashira.title": "Stone Hashira",
       "advancements.upper_moon_one.descr": "The strongest of the Twelve Kizuki.",
+      "key.scarlet_bonds.enhanced_nape_durability_key": "Enhanced Nape Durability",
       "item.scarlet_bonds.sabito_mask": "Sabito Mask",
+      "advancements.fighting_spirit.title": "Fighting Spirit",
       "advancements.tsuchinoe.descr": "Rank up to Tsuchinoe ",
       "advancements.mist_hashira.title": "Mist Hashira",
       "advancements.gyokko_buff.descr": "Your speed is enhanced ",
       "advancements.thunder_hashira.descr": "Become the Thunder Hashira",
       "item.scarlet_bonds.dice_steak": "Dice Steak",
       "advancements.love_hashira.title": "Love Hashira",
-      "key.scarlet_bonds.muscle_growth_key": "Muscle Growth Key",
+      "key.scarlet_bonds.muscle_growth_key": "Muscle Growth",
       "item.scarlet_bonds.hashira_logo": "Hashira Logo",
       "advancements.shinazugawa_buff.title": "Shinazugawa Buff",
       "advancements.wind_hashira.title": "Wind Hashira",
@@ -1797,6 +2315,7 @@
       "advancements.lower_moon_five.title": "Lower Moon Five",
       "advancements.hybrid_demon.descr": "You can use a breathing style, and are able to fuse demon power into nichirin blade. ",
       "advancements.twin_horned_demon.descr": "Grow a second horn ",
+      "advancements.total_concentration_breathing.descr": "Enhances physical and mental abilities by mastering breath control, boosting strength, speed, and focus.",
       "item.scarlet_bonds.logo": "Logo",
       "advancements.horned_demon.descr": "Become stronger, eventually attaining a horn "
     }
@@ -1834,6 +2353,10 @@
           },
           {
             "name": "Demon_Actives ",
+            "children": []
+          },
+          {
+            "name": "Slayer_Actives",
             "children": []
           }
         ]

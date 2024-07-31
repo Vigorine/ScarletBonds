@@ -34,7 +34,7 @@ public class DemonicRegenerationKeyKeyBinding extends ScarletBondsModElements.Mo
 	private KeyBinding keys;
 
 	public DemonicRegenerationKeyKeyBinding(ScarletBondsModElements instance) {
-		super(instance, 214);
+		super(instance, 241);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
@@ -42,7 +42,7 @@ public class DemonicRegenerationKeyKeyBinding extends ScarletBondsModElements.Mo
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.scarlet_bonds.demonic_regeneration_key", GLFW.GLFW_KEY_X, "key.categories.ScarletBonds");
+		keys = new KeyBinding("key.scarlet_bonds.demonic_regeneration_key", GLFW.GLFW_KEY_C, "key.categories.DemonActives");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

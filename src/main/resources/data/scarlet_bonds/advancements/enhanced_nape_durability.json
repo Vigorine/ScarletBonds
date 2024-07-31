@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "scarlet_bonds:red_icon"
+      "item": "scarlet_bonds:red_2_icon"
     },
     "title": {
       "translate": "advancements.enhanced_nape_durability.title"
@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:apex_demon"
+  "parent": "scarlet_bonds:demon_mark"
 }

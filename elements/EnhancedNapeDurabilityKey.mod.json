@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "M",
+    "keyBindingName": "Enhanced Nape Durability",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "EnhancedNapeDurabilityActive"
+    }
+  }
+}

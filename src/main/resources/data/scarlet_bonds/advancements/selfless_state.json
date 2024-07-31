@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:blue_2_icon"
+    },
+    "title": {
+      "translate": "advancements.selfless_state.title"
+    },
+    "description": {
+      "translate": "advancements.selfless_state.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "selfless_state": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:total_concentration_breathing_constant"
+}

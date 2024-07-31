@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "U",
+    "keyBindingName": "Slayer Mark Key",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SlayerMarkActive"
+    }
+  }
+}

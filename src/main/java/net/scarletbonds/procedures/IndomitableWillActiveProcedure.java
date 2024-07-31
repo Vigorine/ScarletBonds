@@ -4,7 +4,6 @@ import net.scarletbonds.ScarletBondsMod;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -26,21 +25,19 @@ public class IndomitableWillActiveProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
-		public static void onEntityDeath(LivingDeathEvent event) {
-			if (event != null && event.getEntity() != null) {
-				Entity entity = event.getEntity();
-				Entity sourceentity = event.getSource().getTrueSource();
+		public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+			if (event.phase == TickEvent.Phase.END) {
+				Entity entity = event.player;
+				World world = entity.world;
 				double i = entity.getPosX();
 				double j = entity.getPosY();
 				double k = entity.getPosZ();
-				World world = entity.world;
 				Map<String, Object> dependencies = new HashMap<>();
 				dependencies.put("x", i);
 				dependencies.put("y", j);
 				dependencies.put("z", k);
 				dependencies.put("world", world);
 				dependencies.put("entity", entity);
-				dependencies.put("sourceentity", sourceentity);
 				dependencies.put("event", event);
 				executeProcedure(dependencies);
 			}
@@ -67,41 +64,54 @@ public class IndomitableWillActiveProcedure {
 						.isDone()
 				: false) {
 			if (entity.getPersistentData().getBoolean("CooldownIW") == false) {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("IndomitableWill activated"), (true));
+				{
+					Entity _ent = entity;
+					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+						_ent.world.getServer().getCommandManager().handleCommand(
+								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								"/effect give @s kimetsunoyaiba:attack_endure 1 255 true");
+					}
 				}
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity)
-							.setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1) * 0.25));
-				entity.getPersistentData().putBoolean("CooldownIW", (true));
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-					private IWorld world;
-
-					public void start(IWorld world, int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
+				if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) <= 1) {
+					if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+						((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("IndomitableWill activated"), (true));
 					}
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1) * 0.25));
+					entity.getPersistentData().putBoolean("CooldownIW", (true));
+					new Object() {
+						private int ticks = 0;
+						private float waitTicks;
+						private IWorld world;
 
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
+						public void start(IWorld world, int waitTicks) {
+							this.waitTicks = waitTicks;
+							MinecraftForge.EVENT_BUS.register(this);
+							this.world = world;
 						}
-					}
 
-					private void run() {
-						entity.getPersistentData().putBoolean("CooldownIW", (false));
-						MinecraftForge.EVENT_BUS.unregister(this);
-					}
-				}.start(world, (int) 6000);
+						@SubscribeEvent
+						public void tick(TickEvent.ServerTickEvent event) {
+							if (event.phase == TickEvent.Phase.END) {
+								this.ticks += 1;
+								if (this.ticks >= this.waitTicks)
+									run();
+							}
+						}
+
+						private void run() {
+							entity.getPersistentData().putBoolean("CooldownIW", (false));
+							MinecraftForge.EVENT_BUS.unregister(this);
+						}
+					}.start(world, (int) 6000);
+				}
 			} else {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You grew a second head and still lost? Skill issue."), (true));
+				if (!entity.isAlive()) {
+					if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+						((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You grew a second head and still lost? Skill issue."),
+								(true));
+					}
 				}
 			}
 		}
