@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:logo"
+    },
+    "title": {
+      "translate": "advancements.demonic_regen.title"
+    },
+    "description": {
+      "translate": "advancements.demonic_regen.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "demonic_regen": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:indomitable_will"
+}

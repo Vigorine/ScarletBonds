@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scarlet_bonds:logo"
+    },
+    "title": {
+      "translate": "advancements.demon_mark.title"
+    },
+    "description": {
+      "translate": "advancements.demon_mark.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "demon_mark": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "scarlet_bonds:muslce_growth"
+}
