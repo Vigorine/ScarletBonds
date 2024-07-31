@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Demonic Regeneration Keybind",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "DemonicRegeneration"
+    }
+  }
+}

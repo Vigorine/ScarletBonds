@@ -66,11 +66,11 @@ public class IndomitableWillProcedureProcedure {
 								.getAdvancement(new ResourceLocation("scarlet_bonds:indomitable_will")))
 						.isDone()
 				: false) {
-			if (entity.getPersistentData().getBoolean("Cooldown") == false) {
+			if (entity.getPersistentData().getBoolean("CooldownInd") == false) {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity)
 							.setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1) * 0.25));
-				entity.getPersistentData().putBoolean("Cooldown", (true));
+				entity.getPersistentData().putBoolean("CooldownInd", (true));
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;
@@ -92,7 +92,7 @@ public class IndomitableWillProcedureProcedure {
 					}
 
 					private void run() {
-						entity.getPersistentData().putBoolean("Cooldown", (false));
+						entity.getPersistentData().putBoolean("CooldownInd", (false));
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
 				}.start(world, (int) 6000);
