@@ -76,13 +76,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 10) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 10 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -97,13 +96,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 4) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:jump_boost 999999 4 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -123,8 +121,8 @@ public class HashiraBuffsProcedure {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "effect clear @s minecraft:speed");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -164,14 +162,13 @@ public class HashiraBuffsProcedure {
 							{
 								Entity _ent = entity;
 								if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-									_ent.world.getServer().getCommandManager().handleCommand(
-											_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-											"effect clear @s minecraft:jump_boost");
+									_ent.world.getServer().getCommandManager()
+											.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 								}
 							}
 							MinecraftForge.EVENT_BUS.unregister(this);
 						}
-					}.start(world, (int) 50);
+					}.start(world, (int) 100);
 				}
 			}
 			if (new Object() {
@@ -185,21 +182,12 @@ public class HashiraBuffsProcedure {
 					}
 					return 0;
 				}
-			}.check(entity) < 20) {
+			}.check(entity) < 0) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:strength 999999 20 true");
-					}
-				}
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
+						_ent.world.getServer().getCommandManager()
+								.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 					}
 				}
 			}
@@ -220,44 +208,7 @@ public class HashiraBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:resistance 999999 3 true");
-					}
-				}
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
-					}
-				}
-			}
-			if (new Object() {
-				int check(Entity _entity) {
-					if (_entity instanceof LivingEntity) {
-						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == Effects.HEALTH_BOOST)
-								return effect.getAmplifier();
-						}
-					}
-					return 0;
-				}
-			}.check(entity) < 60) {
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:health_boost 999999 60 true");
-					}
-				}
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
+								"effect give @s minecraft:resistance 999999 3");
 					}
 				}
 			}
@@ -278,15 +229,7 @@ public class HashiraBuffsProcedure {
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 						_ent.world.getServer().getCommandManager().handleCommand(
 								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 0 true");
-					}
-				}
-				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager().handleCommand(
-								_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-								"effect give @s minecraft:night_vision 999999 1 true");
+								"effect give @s minecraft:night_vision 999999 1");
 					}
 				}
 			}
@@ -296,32 +239,23 @@ public class HashiraBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:serpent_hashira")))
 							.isDone()
 					: false) {
-				if (!(new Object() {
+				if (new Object() {
 					int check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.NIGHT_VISION)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) >= 2)) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
-						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:night_vision 999999 2 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -343,13 +277,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 26) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:strength 999999 26 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -371,13 +304,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 21) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:strength 999999 21 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -393,19 +325,18 @@ public class HashiraBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 11) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 11 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -421,22 +352,28 @@ public class HashiraBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 65) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 65 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
+			}
+			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("scarlet_bonds:flame_hashira")))
+							.isDone()
+					: false) {
 				if (new Object() {
 					int check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
@@ -448,49 +385,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 21) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:strength 999999 21 true");
-						}
-					}
-				}
-			}
-			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
-					? ((ServerPlayerEntity) entity).getAdvancements()
-							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:flame_hashira")))
-							.isDone()
-					: false) {
-				if (!(new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.NIGHT_VISION)
-									return effect.getAmplifier();
-							}
-						}
-						return 0;
-					}
-				}.check(entity) >= 2)) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 2 true");
-						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:night_vision 999999 2 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -501,32 +401,23 @@ public class HashiraBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:wind_hashira")))
 							.isDone()
 					: false) {
-				if (!(new Object() {
+				if (new Object() {
 					int check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.NIGHT_VISION)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) >= 2)) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
-						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:night_vision 999999 2 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -537,32 +428,23 @@ public class HashiraBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:sun_hashira")))
 							.isDone()
 					: false) {
-				if (!(new Object() {
+				if (new Object() {
 					int check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.NIGHT_VISION)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) >= 2)) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
-						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:night_vision 999999 2 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -584,13 +466,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 21) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:strength 999999 21 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -612,50 +493,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 22) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:strength 999999 22 true");
-						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
-						}
-					}
-				}
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
-							}
-						}
-						return 0;
-					}
-				}.check(entity) < 12) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 12 true");
-						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -671,19 +514,18 @@ public class HashiraBuffsProcedure {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) < 63) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 63 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -705,55 +547,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 23) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:strength 999999 23 true");
-						}
-					}
-				}
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
-							}
-						}
-						return 0;
-					}
-				}.check(entity) < 11) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 11 true");
-						}
-					}
-				}
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.HEALTH_BOOST)
-									return effect.getAmplifier();
-							}
-						}
-						return 0;
-					}
-				}.check(entity) < 65) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:health_boost 999999 65 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -764,32 +563,23 @@ public class HashiraBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:moon_hashira")))
 							.isDone()
 					: false) {
-				if (!(new Object() {
+				if (new Object() {
 					int check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.NIGHT_VISION)
+								if (effect.getPotion() == Effects.STRENGTH)
 									return effect.getAmplifier();
 							}
 						}
 						return 0;
 					}
-				}.check(entity) >= 2)) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
-						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:night_vision 999999 2 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}
@@ -811,13 +601,12 @@ public class HashiraBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 22) {
+				}.check(entity) < 0) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:strength 999999 22 true");
+							_ent.world.getServer().getCommandManager()
+									.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "execute");
 						}
 					}
 				}

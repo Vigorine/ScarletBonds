@@ -4,10 +4,10 @@
       "item": "scarlet_bonds:logo"
     },
     "title": {
-      "translate": "advancements.zohakuten_buff.title"
+      "translate": "advancements.muslce_growth.title"
     },
     "description": {
-      "translate": "advancements.zohakuten_buff.descr"
+      "translate": "advancements.muslce_growth.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,9 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "zohakuten_buff": {
+    "muslce_growth": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:doma_buff"
+  "parent": "scarlet_bonds:deleted_mod_element"
 }

@@ -2,8 +2,8 @@
   "_fv": 34,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Kaigaku Buff",
-    "achievementDescription": "Your strength and speed is exceptional ",
+    "achievementName": "Muslce Growth",
+    "achievementDescription": "Rapidly grow muscles, gain a temporary strength and speed buff, before straining your body ",
     "achievementIcon": {
       "value": "CUSTOM:Logo"
     },
@@ -18,8 +18,8 @@
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:KamanueBuff"
+      "value": "CUSTOM:DemonicRegen"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"33\" y=\"29\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"-33\" y=\"44\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }
