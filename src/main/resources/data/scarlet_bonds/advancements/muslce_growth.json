@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:demonic_regen"
+  "parent": "scarlet_bonds:deleted_mod_element"
 }

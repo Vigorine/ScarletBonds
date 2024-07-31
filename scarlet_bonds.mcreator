@@ -1462,34 +1462,40 @@
       "path": "~/Advancements/BDA_Mastery"
     },
     {
-      "name": "IndomitableWill",
+      "name": "EnhancedNapeDura",
       "type": "achievement",
-      "sortid": 173,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "indomitable_will",
+      "registry_name": "enhanced_nape_dura",
       "path": "~/Advancements/Demon_Actives"
     },
     {
-      "name": "IndomitableWillProcedure",
-      "type": "procedure",
-      "sortid": 174,
+      "name": "DemonicRegenerationKeybind",
+      "type": "keybind",
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "indomitable_will_procedure",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Demon_Actives "
+      "registry_name": "demonic_regeneration_keybind",
+      "path": "~/Procedures/Demon_Actives /KeyBinds"
+    },
+    {
+      "name": "SorceryMastery",
+      "type": "achievement",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sorcery_mastery",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "HybridDemon",
+      "type": "achievement",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hybrid_demon",
+      "path": "~/Advancements/Demon_Actives"
     },
     {
       "name": "DemonicRegen",
@@ -1508,60 +1514,6 @@
       "locked_code": false,
       "registry_name": "muslce_growth",
       "path": "~/Advancements/Demon_Actives"
-    },
-    {
-      "name": "DemonMark",
-      "type": "achievement",
-      "sortid": 177,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "demon_mark",
-      "path": "~/Advancements/Demon_Actives"
-    },
-    {
-      "name": "SorceryMastery",
-      "type": "achievement",
-      "sortid": 178,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sorcery_mastery",
-      "path": "~/Advancements/Demon_Actives"
-    },
-    {
-      "name": "Selfdestruction",
-      "type": "achievement",
-      "sortid": 179,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "selfdestruction",
-      "path": "~/Advancements/Demon_Actives"
-    },
-    {
-      "name": "HybridDemon",
-      "type": "achievement",
-      "sortid": 180,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hybrid_demon",
-      "path": "~/Advancements/Demon_Actives"
-    },
-    {
-      "name": "EnhancedNapeDura",
-      "type": "achievement",
-      "sortid": 181,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enhanced_nape_dura",
-      "path": "~/Advancements/Demon_Actives"
-    },
-    {
-      "name": "DemonicRegenerationKeybind",
-      "type": "keybind",
-      "sortid": 182,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "demonic_regeneration_keybind",
-      "path": "~/Procedures/Demon_Actives /KeyBinds"
     },
     {
       "name": "DemonicRegeneration",
@@ -1606,6 +1558,54 @@
       "path": "~/Procedures/Demon_Actives "
     },
     {
+      "name": "IndomitableWill",
+      "type": "achievement",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indomitable_will",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "Selfdestruction",
+      "type": "achievement",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selfdestruction",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
+      "name": "IndomitableWillProcedure",
+      "type": "procedure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "indomitable_will_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "DemonMark",
+      "type": "achievement",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_mark",
+      "path": "~/Advancements/Demon_Actives"
+    },
+    {
       "name": "MuscleGrowthKey",
       "type": "keybind",
       "sortid": 185,
@@ -1621,7 +1621,6 @@
     "en_us": {
       "advancements.thrall_demon_ii.title": "Thrall Demon II",
       "item.scarlet_bonds.icon_l_1": "Icon L 1",
-      "advancements.demonic_regen.title": "Demonic Regeneration ",
       "advancements.hinoe.title": "Hinoe",
       "item.scarlet_bonds.icon_l_2": "Icon L 2",
       "advancements.doma_buff.title": "Doma Buff",
@@ -1669,9 +1668,7 @@
       "advancements.upper_moon_four.descr": "Rank up in the Upper Moons",
       "advancements.apex_demon.descr": "Are you strong enough to Join the Twelve Kizuki? ",
       "advancements.lower_moon_1.title": "Lower Moon 1",
-      "advancements.enhanced_nape_dura.title": "Enhanced Nape Durability ",
       "advancements.hunter_demon_ii.title": "Hunter Demon II",
-      "advancements.muslce_growth.descr": "Rapidly grow muscles, gain a temporary strength and speed buff, before straining your body ",
       "advancements.moon_hashira.descr": "Become the Moon Hashira",
       "item.scarlet_bonds.uniform_uzui": "Uniform Uzui",
       "item.scarlet_bonds.blood": "Blood",
@@ -1691,22 +1688,17 @@
       "advancements.lower_moon_four.title": "Lower Moon Four",
       "item.scarlet_bonds.ripped": "Ripped",
       "advancements.shinazugawa_buff.descr": "Your breathing is optimised ",
-      "advancements.muslce_growth.title": "Muslce Growth",
       "item.scarlet_bonds.icon_kizuki": "Icon Kizuki",
       "advancements.horned_demon.title": "Horned Demon",
       "advancements.lower_moon_one.title": "Lower Moon One",
       "advancements.mitsuri_buff.descr": "You are exceptionally durable ",
-      "advancements.enhanced_nape_dura.descr": "IS THAT AN AOT REFERENCE??? Fortify the nape of your neck to avoid lethal damage for 2 seconds, in exchange for the ability to move. ",
       "advancements.mist_hashira.descr": "Become the Mist Hashira",
       "item.scarlet_bonds.icon_u_1": "Icon U 1",
       "advancements.love_hashira.descr": "Become the Love Hashira",
       "advancements.tanjiro_buff.title": "Tanjiro Buff",
       "advancements.hunter_demon.descr": "Become a hunter demon ",
-      "key.scarlet_bonds.demonic_regeneration_keybind": "Demonic Regeneration Keybind",
       "advancements.insect_hashira.descr": "Become the Insect Hashira",
-      "advancements.demon_mark.descr": "Awaken a mark on your body, amplifying your strength, speed and combat ability. In the mark state, you will suffocate and suffer consequences afterwards.",
       "item.scarlet_bonds.uniform_human_kokushibo": "Uniform Human Kokushibo",
-      "advancements.sorcery_mastery.descr": "Your mastery over blood demon arts enhances you efficiency, significantly lowering cooldown in exchange for mobility",
       "advancements.upper_moon_five.title": "Upper Moon Five",
       "advancements.thrall_demon_ii.descr": "Become stronger ",
       "item.scarlet_bonds.icon_u_2": "Icon U 2",
@@ -1734,12 +1726,10 @@
       "advancements.wind_hashira.descr": "Become the Wind Hashira",
       "advancements.apex_demon.title": "Apex Demon",
       "advancements.upper_moon_two.descr": "Can you become the strongest Upper Moon?",
-      "advancements.selfdestruction.descr": "Channel your energy into a devastating explosion in exchange for a large portion of your health ",
       "advancements.flame_hashira.descr": "Become the Flame Hashira",
       "item.scarlet_bonds.uniform_himejima": "Uniform Himejima",
       "advancements.moon_hashira.title": "Moon Hashira",
       "advancements.beast_hashira.title": "Beast Hashira",
-      "advancements.hybrid_demon.title": "Hybrid Demon ",
       "advancements.hunter_demon_ii.descr": "Become Stronger ",
       "advancements.ravager_demon.title": "Ravager Demon",
       "advancements.zohakuten_buff.title": "Zohakuten Buff",
@@ -1747,11 +1737,11 @@
       "advancements.twelve_kizuki.title": "Twelve Kizuki",
       "advancements.mizunoe.descr": "Rank up to Mizunoe",
       "item.scarlet_bonds.uniform_inosuke": "Uniform Inosuke",
-      "advancements.kaigaku_buff.descr": "Your strength and speed is exceptional ",
+      "advancements.kaigaku_buff.descr": "Your strength and speed are exceptional ",
       "item.scarlet_bonds.hand_demon": "Hand Demon",
       "advancements.drum_buff.title": "Drum Buff",
       "advancements.water_hashira.title": "Water Hashira",
-      "advancements.zohakuten_buff.descr": "Your speed and durability is exceptional ",
+      "advancements.zohakuten_buff.descr": "Your speed is enhanced",
       "advancements.sound_hashira.title": "Sound Hashira",
       "advancements.hashira.title": "Hashira",
       "advancements.hunter_demon.title": "Hunter Demon",
@@ -1767,13 +1757,11 @@
       "advancements.mizunoe.title": "Mizunoe",
       "advancements.kanoto.descr": "Rank up to Kanoto ",
       "advancements.lower_moon_one.descr": "Can you become a part of the Upper Moons? ",
-      "advancements.indomitable_will.descr": "On death, regrow your head and regenerate 25% of your max HP",
       "advancements.mitsuri_buff.title": "Mitsuri Buff",
       "advancements.hairo_buff.title": "Hairo Buff",
       "advancements.yahaba_buff.descr": "Your strength is exceptional ",
       "advancements.doma_buff.descr": "Your strength is exceptional",
       "advancements.kanae_buff.title": "Kanae Buff",
-      "advancements.demonic_regen.descr": "Accelerate your healing factor. Removing red sword and all negative effects.",
       "advancements.rengoku_buff.title": "Rengoku Buff",
       "advancements.feral_demon.descr": "Become a feral demon ",
       "advancements.welcome.title": "Scarlet Bonds",
@@ -1782,13 +1770,11 @@
       "advancements.upper_moon_six.descr": "You\u0027ve become the weakest Upper Moon. Will you rise and prove your worth?",
       "advancements.tokito_buff.descr": "Your strength is exceptional ",
       "item.scarlet_bonds.uniform_rengoku": "Uniform Rengoku",
-      "advancements.sorcery_mastery.title": "Demon Mark",
       "advancements.hinoto.title": "Hinoto",
       "advancements.upper_moon_five.descr": "Rank up in the Upper Moons",
       "advancements.lower_moon_three.descr": "Rank up in the Twelve Kizuki",
       "advancements.upper_moon_1.title": "Upper Moon 1",
       "advancements.tanjiro_buff.descr": "Your breathing is optimised ",
-      "advancements.demon_mark.title": "Demon Mark",
       "advancements.lower_moon_six.descr": "You are now a part of the Twelve Kizuki",
       "advancements.feral_demon_ii.descr": "Become stronger ",
       "advancements.mizunoto.title": "Mizunoto",
@@ -1796,7 +1782,6 @@
       "advancements.enmu_buff.descr": "Your strength is exceptional ",
       "advancements.serpent_hashira.title": "Serpent Hashira",
       "advancements.lower_moon_1.descr": "Do you have what it takes to join the ranks of the Upper Moons?",
-      "advancements.indomitable_will.title": "Indomitable Will",
       "advancements.beast_hashira.descr": "Become the Beast Hashira",
       "advancements.sun_hashira.title": "Sun Hashira",
       "advancements.upper_moon_three.descr": "Rank up in the Upper Moons",
@@ -1811,8 +1796,6 @@
       "advancements.thunder_hashira.descr": "Become the Thunder Hashira",
       "item.scarlet_bonds.dice_steak": "Dice Steak",
       "advancements.love_hashira.title": "Love Hashira",
-      "key.scarlet_bonds.muscle_growth_key": "Muscle Growth Key",
-      "advancements.selfdestruction.title": "Kamikaze",
       "item.scarlet_bonds.hashira_logo": "Hashira Logo",
       "advancements.shinazugawa_buff.title": "Shinazugawa Buff",
       "advancements.wind_hashira.title": "Wind Hashira",
@@ -1822,7 +1805,6 @@
       "item.scarlet_bonds.spider_head": "Spider Head",
       "advancements.flower_hashira.descr": "Become the Flower Hashira",
       "advancements.lower_moon_five.title": "Lower Moon Five",
-      "advancements.hybrid_demon.descr": "You can use a breathing style, and are able to wield a nichirin blade. ",
       "advancements.twin_horned_demon.descr": "Grow a second horn ",
       "item.scarlet_bonds.logo": "Logo",
       "advancements.horned_demon.descr": "Become stronger, eventually attaining a horn "
