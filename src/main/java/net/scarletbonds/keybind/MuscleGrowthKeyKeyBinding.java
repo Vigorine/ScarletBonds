@@ -1,17 +1,40 @@
 
 package net.scarletbonds.keybind;
 
+import org.lwjgl.glfw.GLFW;
+
+import net.scarletbonds.procedures.MuscleGrowthActiveProcedure;
+import net.scarletbonds.ScarletBondsModElements;
 import net.scarletbonds.ScarletBondsMod;
+
+import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.client.Minecraft;
+
+import java.util.stream.Stream;
+import java.util.function.Supplier;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
 @ScarletBondsModElements.ModElement.Tag
 public class MuscleGrowthKeyKeyBinding extends ScarletBondsModElements.ModElement {
-
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 
 	public MuscleGrowthKeyKeyBinding(ScarletBondsModElements instance) {
-		super(instance, 185);
-
+		super(instance, 200);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
@@ -19,7 +42,7 @@ public class MuscleGrowthKeyKeyBinding extends ScarletBondsModElements.ModElemen
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.scarlet_bonds.muscle_growth_key", GLFW.GLFW_KEY_C, "key.categories.misc");
+		keys = new KeyBinding("key.scarlet_bonds.muscle_growth_key", GLFW.GLFW_KEY_C, "key.categories.ScarletBonds");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -32,14 +55,12 @@ public class MuscleGrowthKeyKeyBinding extends ScarletBondsModElements.ModElemen
 				if (event.getAction() == GLFW.GLFW_PRESS) {
 					ScarletBondsMod.PACKET_HANDLER.sendToServer(new KeyBindingPressedMessage(0, 0));
 					pressAction(Minecraft.getInstance().player, 0, 0);
-
 				}
 			}
 		}
 	}
 
 	public static class KeyBindingPressedMessage {
-
 		int type, pressedms;
 
 		public KeyBindingPressedMessage(int type, int pressedms) {
@@ -64,7 +85,6 @@ public class MuscleGrowthKeyKeyBinding extends ScarletBondsModElements.ModElemen
 			});
 			context.setPacketHandled(true);
 		}
-
 	}
 
 	private static void pressAction(PlayerEntity entity, int type, int pressedms) {
@@ -72,18 +92,14 @@ public class MuscleGrowthKeyKeyBinding extends ScarletBondsModElements.ModElemen
 		double x = entity.getPosX();
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-
 		if (type == 0) {
 
-			MuscleGrowthProcedure
+			MuscleGrowthActiveProcedure
 					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
-
 	}
-
 }

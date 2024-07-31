@@ -470,7 +470,7 @@ public class ApexDemonBuffsProcedure {
 			if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-									.getAdvancement(new ResourceLocation("scarlet_bonds:hairo_buff")))
+									.getAdvancement(new ResourceLocation("scarlet_bonds:drum_buff")))
 							.isDone()
 					: false) {
 				if (new Object() {

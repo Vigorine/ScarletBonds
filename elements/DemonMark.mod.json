@@ -3,14 +3,14 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Demon Mark",
-    "achievementDescription": "Awaken a mark on your body, amplifying your strength, speed and combat ability. In the mark state, you will suffocate and suffer consequences afterwards.",
+    "achievementDescription": "Awakens a supernatural mark on your body, amplifying your strength, speed, and combat skills.",
     "achievementIcon": {
-      "value": "CUSTOM:Logo"
+      "value": "CUSTOM:RedIcon"
     },
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
-    "announceToChat": true,
+    "announceToChat": false,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
@@ -18,8 +18,8 @@
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:MuslceGrowth"
+      "value": "CUSTOM:EnhancedNapeDurability"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"-33\" y=\"44\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"32\" y=\"42\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

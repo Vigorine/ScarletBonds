@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "scarlet_bonds:logo"
+      "item": "scarlet_bonds:icon_l_1"
     },
     "title": {
-      "translate": "advancements.demonic_regen.title"
+      "translate": "advancements.lower_moon_one.title"
     },
     "description": {
-      "translate": "advancements.demonic_regen.descr"
+      "translate": "advancements.lower_moon_one.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,9 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "demonic_regen": {
+    "lower_moon_one": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:deleted_mod_element"
+  "parent": "scarlet_bonds:lower_moon_two"
 }

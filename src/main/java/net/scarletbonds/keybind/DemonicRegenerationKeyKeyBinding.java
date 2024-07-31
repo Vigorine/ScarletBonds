@@ -1,17 +1,40 @@
 
 package net.scarletbonds.keybind;
 
+import org.lwjgl.glfw.GLFW;
+
+import net.scarletbonds.procedures.DemonRegenerationActiveProcedure;
+import net.scarletbonds.ScarletBondsModElements;
 import net.scarletbonds.ScarletBondsMod;
 
-@ScarletBondsModElements.ModElement.Tag
-public class DemonicRegenerationKeybindKeyBinding extends ScarletBondsModElements.ModElement {
+import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.client.Minecraft;
+
+import java.util.stream.Stream;
+import java.util.function.Supplier;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
+@ScarletBondsModElements.ModElement.Tag
+public class DemonicRegenerationKeyKeyBinding extends ScarletBondsModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 
-	public DemonicRegenerationKeybindKeyBinding(ScarletBondsModElements instance) {
-		super(instance, 182);
-
+	public DemonicRegenerationKeyKeyBinding(ScarletBondsModElements instance) {
+		super(instance, 199);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
@@ -19,7 +42,7 @@ public class DemonicRegenerationKeybindKeyBinding extends ScarletBondsModElement
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.scarlet_bonds.demonic_regeneration_keybind", GLFW.GLFW_KEY_X, "key.categories.misc");
+		keys = new KeyBinding("key.scarlet_bonds.demonic_regeneration_key", GLFW.GLFW_KEY_X, "key.categories.ScarletBonds");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -32,14 +55,12 @@ public class DemonicRegenerationKeybindKeyBinding extends ScarletBondsModElement
 				if (event.getAction() == GLFW.GLFW_PRESS) {
 					ScarletBondsMod.PACKET_HANDLER.sendToServer(new KeyBindingPressedMessage(0, 0));
 					pressAction(Minecraft.getInstance().player, 0, 0);
-
 				}
 			}
 		}
 	}
 
 	public static class KeyBindingPressedMessage {
-
 		int type, pressedms;
 
 		public KeyBindingPressedMessage(int type, int pressedms) {
@@ -64,7 +85,6 @@ public class DemonicRegenerationKeybindKeyBinding extends ScarletBondsModElement
 			});
 			context.setPacketHandled(true);
 		}
-
 	}
 
 	private static void pressAction(PlayerEntity entity, int type, int pressedms) {
@@ -72,16 +92,14 @@ public class DemonicRegenerationKeybindKeyBinding extends ScarletBondsModElement
 		double x = entity.getPosX();
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-
 		if (type == 0) {
 
-			DemonicRegenerationProcedure.executeProcedure(Collections.emptyMap());
+			DemonRegenerationActiveProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
-
 	}
-
 }

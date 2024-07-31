@@ -6,7 +6,7 @@
     "keyBindingName": "Muscle Growth Key",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
-      "name": "MuscleGrowth"
+      "name": "MuscleGrowthActive"
     }
   }
 }

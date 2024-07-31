@@ -4,10 +4,10 @@
       "item": "scarlet_bonds:red_icon"
     },
     "title": {
-      "translate": "advancements.zohakuten_buff.title"
+      "translate": "advancements.self_destruction.title"
     },
     "description": {
-      "translate": "advancements.zohakuten_buff.descr"
+      "translate": "advancements.self_destruction.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,9 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "zohakuten_buff": {
+    "self_destruction": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:doma_buff"
+  "parent": "scarlet_bonds:indomitable_will"
 }

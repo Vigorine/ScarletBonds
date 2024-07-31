@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "scarlet_bonds:icon_l_1"
+      "item": "scarlet_bonds:icon_u_1"
     },
     "title": {
-      "translate": "advancements.lower_moon_1.title"
+      "translate": "advancements.upper_moon_one.title"
     },
     "description": {
-      "translate": "advancements.lower_moon_1.descr"
+      "translate": "advancements.upper_moon_one.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,9 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "lower_moon_1": {
+    "upper_moon_one": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "scarlet_bonds:lower_moon_two"
+  "parent": "scarlet_bonds:upper_moon_two"
 }
