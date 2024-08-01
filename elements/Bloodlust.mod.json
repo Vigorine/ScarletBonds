@@ -15,9 +15,6 @@
     "renderStatusInHUD": true,
     "onStarted": {
       "name": "BloodlustEffect"
-    },
-    "onActiveTick": {
-      "name": "BloodlustEffect"
     }
   }
 }

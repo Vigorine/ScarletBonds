@@ -4,10 +4,6 @@ import net.scarletbonds.potion.BloodlustPotionEffect;
 import net.scarletbonds.potion.BloodlossPotionEffect;
 import net.scarletbonds.ScarletBondsMod;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
@@ -65,101 +61,32 @@ public class MarechiBloodActiveProcedure {
 								.getAdvancement(new ResourceLocation("scarlet_bonds:marechi_blood")))
 						.isDone()
 				: false) {
-			if (entity.getPersistentData().getBoolean("CooldownMB") == false) {
-				if (entity.getPersistentData().getBoolean("MBActivated") == false) {
-					if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-						((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Marechi Blood activated"), (true));
-					}
-					{
-						List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You cut yourself, releasing Marechi Blood"), (true));
+			}
+			{
+				List<Entity> _entfound = world
+						.getEntitiesWithinAABB(Entity.class,
 								new AxisAlignedBB(x - (40 / 2d), y - (40 / 2d), z - (40 / 2d), x + (40 / 2d), y + (40 / 2d), z + (40 / 2d)), null)
-								.stream().sorted(new Object() {
-									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-									}
-								}.compareDistOf(x, y, z)).collect(Collectors.toList());
-						for (Entity entityiterator : _entfound) {
-							if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
-									? ((ServerPlayerEntity) entity).getAdvancements()
-											.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-													.getAdvancement(new ResourceLocation("scarlet_bonds:thrall_demon")))
-											.isDone()
-									: false) {
-								if (entityiterator instanceof LivingEntity)
-									((LivingEntity) entityiterator)
-											.addPotionEffect(new EffectInstance(BloodlustPotionEffect.potion, (int) 60, (int) 1));
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 							}
-						}
+						}.compareDistOf(x, y, z)).collect(Collectors.toList());
+				for (Entity entityiterator : _entfound) {
+					if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+							? ((ServerPlayerEntity) entity).getAdvancements()
+									.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+											.getAdvancement(new ResourceLocation("scarlet_bonds:thrall_demon")))
+									.isDone()
+							: false) {
+						if (entityiterator instanceof LivingEntity)
+							((LivingEntity) entityiterator).addPotionEffect(new EffectInstance(BloodlustPotionEffect.potion, (int) 200, (int) 0));
 					}
-					if (entity instanceof LivingEntity)
-						((LivingEntity) entity).addPotionEffect(new EffectInstance(BloodlossPotionEffect.potion, (int) 999999, (int) 1));
-					entity.getPersistentData().putBoolean("MBActivated", (true));
-					entity.getPersistentData().putBoolean("CooldownMB", (true));
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private IWorld world;
-
-						public void start(IWorld world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
-							}
-						}
-
-						private void run() {
-							entity.getPersistentData().putBoolean("CooldownMB", (false));
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, (int) 200);
-				} else {
-					if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-						((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Marechi Blood Deactivated"), (true));
-					}
-					if (entity instanceof LivingEntity) {
-						((LivingEntity) entity).removePotionEffect(BloodlossPotionEffect.potion);
-					}
-					entity.getPersistentData().putBoolean("MBActivated", (false));
-					entity.getPersistentData().putBoolean("CooldownMB", (true));
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private IWorld world;
-
-						public void start(IWorld world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
-							}
-						}
-
-						private void run() {
-							entity.getPersistentData().putBoolean("CooldownMB", (false));
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, (int) 200);
-				}
-			} else {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Marechi Blood is on cooldown"), (true));
 				}
 			}
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(BloodlossPotionEffect.potion, (int) 200, (int) 0));
 		}
 	}
 }
