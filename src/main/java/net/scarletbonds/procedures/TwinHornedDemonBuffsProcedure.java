@@ -76,13 +76,13 @@ public class TwinHornedDemonBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 10) {
+				}.check(entity) < 9) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 10 true");
+									"effect give @s minecraft:speed 999999 9 true");
 						}
 					}
 				}

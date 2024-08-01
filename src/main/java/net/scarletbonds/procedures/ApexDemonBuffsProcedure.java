@@ -76,13 +76,13 @@ public class ApexDemonBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 11) {
+				}.check(entity) < 8) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 11 true");
+									"effect give @s minecraft:speed 999999 8 true");
 						}
 					}
 				}
@@ -312,24 +312,26 @@ public class ApexDemonBuffsProcedure {
 						}
 					}
 				}
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 13) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 13 true");
+					}.check(entity) < 11) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 11 true");
+							}
 						}
 					}
 				}
@@ -396,24 +398,26 @@ public class ApexDemonBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:gyokko_buff")))
 							.isDone()
 					: false) {
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 13) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 13 true");
+					}.check(entity) < 11) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 11 true");
+							}
 						}
 					}
 				}
@@ -445,24 +449,26 @@ public class ApexDemonBuffsProcedure {
 						}
 					}
 				}
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 12) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 12 true");
+					}.check(entity) < 10) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 10 true");
+							}
 						}
 					}
 				}
@@ -494,24 +500,26 @@ public class ApexDemonBuffsProcedure {
 						}
 					}
 				}
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 12) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 12 true");
+					}.check(entity) < 10) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 10 true");
+							}
 						}
 					}
 				}
@@ -550,24 +558,26 @@ public class ApexDemonBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:zohakuten_buff")))
 							.isDone()
 					: false) {
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 13) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 13 true");
+					}.check(entity) < 11) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 11 true");
+							}
 						}
 					}
 				}

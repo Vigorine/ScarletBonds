@@ -76,13 +76,13 @@ public class KizukiBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 12) {
+				}.check(entity) < 10) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 12 true");
+									"effect give @s minecraft:speed 999999 10 true");
 						}
 					}
 				}
@@ -185,7 +185,7 @@ public class KizukiBuffsProcedure {
 					}
 					return 0;
 				}
-			}.check(entity) < 0) {
+			}.check(entity) < 20) {
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
@@ -579,24 +579,26 @@ public class KizukiBuffsProcedure {
 						}
 					}
 				}
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 14) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 14 true");
+					}.check(entity) < 12) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 12 true");
+							}
 						}
 					}
 				}
@@ -663,24 +665,26 @@ public class KizukiBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:gyokko_buff")))
 							.isDone()
 					: false) {
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 14) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 14 true");
+					}.check(entity) < 12) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 12 true");
+							}
 						}
 					}
 				}
@@ -723,13 +727,13 @@ public class KizukiBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 14) {
+				}.check(entity) < 11) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 14 true");
+									"effect give @s minecraft:speed 999999 11 true");
 						}
 					}
 				}
@@ -761,24 +765,26 @@ public class KizukiBuffsProcedure {
 						}
 					}
 				}
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 14) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 14 true");
+					}.check(entity) < 11) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 11 true");
+							}
 						}
 					}
 				}
@@ -817,24 +823,26 @@ public class KizukiBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:zohakuten_buff")))
 							.isDone()
 					: false) {
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 14) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 14 true");
+					}.check(entity) < 12) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 12 true");
+							}
 						}
 					}
 				}

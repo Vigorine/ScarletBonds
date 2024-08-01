@@ -76,13 +76,13 @@ public class KinoeBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 9) {
+				}.check(entity) < 7) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 9 true");
+									"effect give @s minecraft:speed 999999 7 true");
 						}
 					}
 				}
@@ -368,24 +368,26 @@ public class KinoeBuffsProcedure {
 									.getAdvancement(new ResourceLocation("scarlet_bonds:uzui_buff")))
 							.isDone()
 					: false) {
-				if (new Object() {
-					int check(Entity _entity) {
-						if (_entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == Effects.SPEED)
-									return effect.getAmplifier();
+				if (entity.isSprinting()) {
+					if (new Object() {
+						int check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == Effects.SPEED)
+										return effect.getAmplifier();
+								}
 							}
+							return 0;
 						}
-						return 0;
-					}
-				}.check(entity) < 10) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 10 true");
+					}.check(entity) < 8) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 8 true");
+							}
 						}
 					}
 				}
@@ -436,21 +438,23 @@ public class KinoeBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 11) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 11 true");
+				}.check(entity) < 9) {
+					if (entity.isSprinting()) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 9 true");
+							}
 						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
+							}
 						}
 					}
 				}
@@ -647,21 +651,23 @@ public class KinoeBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 11) {
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 11 true");
+				}.check(entity) < 9) {
+					if (entity.isSprinting()) {
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"effect give @s minecraft:speed 999999 9 true");
+							}
 						}
-					}
-					{
-						Entity _ent = entity;
-						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-							_ent.world.getServer().getCommandManager().handleCommand(
-									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
+						{
+							Entity _ent = entity;
+							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+								_ent.world.getServer().getCommandManager().handleCommand(
+										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+										"/effect give @s kimetsunoyaiba:potion_demon_slayer_mark 999999 1 true");
+							}
 						}
 					}
 				}

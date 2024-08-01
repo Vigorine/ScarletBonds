@@ -76,13 +76,13 @@ public class MizunoeBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 2) {
+				}.check(entity) < 1) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 2 true");
+									"effect give @s minecraft:speed 999999 1 true");
 						}
 					}
 				}
