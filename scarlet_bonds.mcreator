@@ -1808,6 +1808,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2076,6 +2092,58 @@
         ]
       },
       "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "Bloodlust",
+      "type": "potioneffect",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodlust",
+      "path": "~/Effects"
+    },
+    {
+      "name": "Bloodloss",
+      "type": "potioneffect",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodloss",
+      "path": "~/Effects"
+    },
+    {
+      "name": "BloodlustEffect",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodlust_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Effects"
+    },
+    {
+      "name": "BloodlossEffect",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodloss_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Effects"
     }
   ],
   "variable_elements": [],
@@ -2117,6 +2185,7 @@
       "advancements.repetitive_action_technique.descr": "Utilise repetitive actions to increase attack precision and effectiveness.",
       "advancements.inosuke_buff.descr": "Your body is in peak condition ",
       "key.scarlet_bonds.kakushi_key": "Kakushi",
+      "effect.bloodlust": "Bloodlust",
       "advancements.kakushi.descr": "Utilise the specialised medical techniques and knowledge of the Kakushi to both heal allies and poison enemies.",
       "item.scarlet_bonds.slayer_uniform": "Slayer Uniform",
       "key.categories.DemonActives": "Demon Actives",
@@ -2164,6 +2233,7 @@
       "item.scarlet_bonds.ripped": "Ripped",
       "advancements.shinazugawa_buff.descr": "Your breathing is optimised ",
       "item.scarlet_bonds.icon_kizuki": "Icon Kizuki",
+      "effect.bloodloss": "Bloodloss",
       "advancements.horned_demon.title": "Horned Demon",
       "advancements.lower_moon_one.title": "Lower Moon One",
       "advancements.mitsuri_buff.descr": "You are exceptionally durable ",
@@ -2358,6 +2428,10 @@
           {
             "name": "Slayer_Actives",
             "children": []
+          },
+          {
+            "name": "Effects",
+            "children": []
           }
         ]
       },
@@ -2400,6 +2474,10 @@
       },
       {
         "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "Effects",
         "children": []
       }
     ]
