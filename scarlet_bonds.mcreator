@@ -1797,23 +1797,6 @@
       "path": "~/Procedures/Slayer_Actives"
     },
     {
-      "name": "MarechiBloodActive",
-      "type": "procedure",
-      "sortid": 229,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "marechi_blood_active",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Slayer_Actives"
-    },
-    {
       "name": "KakushiActive",
       "type": "procedure",
       "sortid": 230,
@@ -2034,7 +2017,7 @@
       "type": "keybind",
       "sortid": 252,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "fighting_spirit_key",
       "path": "~/Keybinds"
     },
@@ -2076,6 +2059,124 @@
         ]
       },
       "path": "~/Procedures/Demon_Actives "
+    },
+    {
+      "name": "MarechiBloodActive",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marechi_blood_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "BloodlustEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodlust_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "Bloodlust",
+      "type": "potioneffect",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodlust",
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "BloodlossEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodloss_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "Bloodloss",
+      "type": "potioneffect",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodloss",
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "MarechiRelease",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marechi_release",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
     }
   ],
   "variable_elements": [],
@@ -2116,6 +2217,7 @@
       "advancements.total_concentration_breathing.title": "Total Concentration Breathing",
       "advancements.repetitive_action_technique.descr": "Utilise repetitive actions to increase attack precision and effectiveness.",
       "advancements.inosuke_buff.descr": "Your body is in peak condition ",
+      "effect.bloodlust": "Bloodlust ",
       "key.scarlet_bonds.kakushi_key": "Kakushi",
       "advancements.kakushi.descr": "Utilise the specialised medical techniques and knowledge of the Kakushi to both heal allies and poison enemies.",
       "item.scarlet_bonds.slayer_uniform": "Slayer Uniform",
@@ -2133,8 +2235,8 @@
       "advancements.kinoto.descr": "Rank up to Kinoto",
       "advancements.lower_moon_four.descr": "Rank up in the Twelve Kizuki",
       "advancements.himejima_buff.descr": "Your strength and durability is exceptional ",
-      "advancements.welcome.descr": "Welcome to the Scarlet Bonds mod",
       "key.scarlet_bonds.total_concentration_breathing_key": "Total Concentration Breathing",
+      "advancements.welcome.descr": "Welcome to the Scarlet Bonds mod",
       "key.scarlet_bonds.sorcery_mastery_key": "Sorcery Mastery",
       "advancements.upper_moon_four.descr": "Rank up in the Upper Moons",
       "advancements.apex_demon.descr": "Are you strong enough to Join the Twelve Kizuki? ",
@@ -2164,6 +2266,7 @@
       "item.scarlet_bonds.ripped": "Ripped",
       "advancements.shinazugawa_buff.descr": "Your breathing is optimised ",
       "item.scarlet_bonds.icon_kizuki": "Icon Kizuki",
+      "effect.bloodloss": "Bloodloss",
       "advancements.horned_demon.title": "Horned Demon",
       "advancements.lower_moon_one.title": "Lower Moon One",
       "advancements.mitsuri_buff.descr": "You are exceptionally durable ",
@@ -2400,6 +2503,10 @@
       },
       {
         "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "Potion Effects",
         "children": []
       }
     ]

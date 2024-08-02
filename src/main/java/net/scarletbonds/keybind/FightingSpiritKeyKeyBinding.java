@@ -3,6 +3,7 @@ package net.scarletbonds.keybind;
 
 import org.lwjgl.glfw.GLFW;
 
+import net.scarletbonds.procedures.MarechiReleaseProcedure;
 import net.scarletbonds.procedures.FightingSpiritActiveProcedure;
 import net.scarletbonds.ScarletBondsModElements;
 import net.scarletbonds.ScarletBondsMod;
@@ -22,13 +23,17 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.Minecraft;
 
+import java.util.stream.Stream;
 import java.util.function.Supplier;
-import java.util.Collections;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
 @ScarletBondsModElements.ModElement.Tag
 public class FightingSpiritKeyKeyBinding extends ScarletBondsModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
+	private long lastpress = 0;
 
 	public FightingSpiritKeyKeyBinding(ScarletBondsModElements instance) {
 		super(instance, 252);
@@ -39,7 +44,7 @@ public class FightingSpiritKeyKeyBinding extends ScarletBondsModElements.ModElem
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.scarlet_bonds.fighting_spirit_key", GLFW.GLFW_KEY_Y, "key.categories.SlayerActives");
+		keys = new KeyBinding("key.scarlet_bonds.fighting_spirit_key", GLFW.GLFW_KEY_Y, "key.categories.misc");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -52,6 +57,11 @@ public class FightingSpiritKeyKeyBinding extends ScarletBondsModElements.ModElem
 				if (event.getAction() == GLFW.GLFW_PRESS) {
 					ScarletBondsMod.PACKET_HANDLER.sendToServer(new KeyBindingPressedMessage(0, 0));
 					pressAction(Minecraft.getInstance().player, 0, 0);
+					lastpress = System.currentTimeMillis();
+				} else if (event.getAction() == GLFW.GLFW_RELEASE) {
+					int dt = (int) (System.currentTimeMillis() - lastpress);
+					ScarletBondsMod.PACKET_HANDLER.sendToServer(new KeyBindingPressedMessage(1, dt));
+					pressAction(Minecraft.getInstance().player, 1, dt);
 				}
 			}
 		}
@@ -94,7 +104,16 @@ public class FightingSpiritKeyKeyBinding extends ScarletBondsModElements.ModElem
 			return;
 		if (type == 0) {
 
-			FightingSpiritActiveProcedure.executeProcedure(Collections.emptyMap());
+			FightingSpiritActiveProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (type == 1) {
+
+			MarechiReleaseProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

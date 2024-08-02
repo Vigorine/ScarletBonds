@@ -18,32 +18,32 @@ import java.util.Map;
 import java.util.List;
 import java.util.Comparator;
 
-public class MarechiBloodActiveProcedure {
+public class MarechiReleaseProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency world for procedure MarechiBloodActive!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency world for procedure MarechiRelease!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency x for procedure MarechiBloodActive!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency x for procedure MarechiRelease!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency y for procedure MarechiBloodActive!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency y for procedure MarechiRelease!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency z for procedure MarechiBloodActive!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency z for procedure MarechiRelease!");
 			return;
 		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure MarechiBloodActive!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure MarechiRelease!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
@@ -58,12 +58,11 @@ public class MarechiBloodActiveProcedure {
 						.isDone()
 				: false) {
 			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Marechi Blood Active"), (true));
+				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Marechi Blood Deactivated"), (true));
 			}
 			{
-				List<Entity> _entfound = world
-						.getEntitiesWithinAABB(Entity.class,
-								new AxisAlignedBB(x - (40 / 2d), y - (40 / 2d), z - (40 / 2d), x + (40 / 2d), y + (40 / 2d), z + (40 / 2d)), null)
+				List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
+						new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
 						.stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
