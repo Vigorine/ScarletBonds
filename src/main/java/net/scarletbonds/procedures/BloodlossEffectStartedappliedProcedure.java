@@ -1,10 +1,6 @@
 package net.scarletbonds.procedures;
 
-import net.scarletbonds.ScarletBondsMod;
-
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
+import net.minecraftforge.eventbus.api.Event;
 
 public class BloodlossEffectStartedappliedProcedure {
 
@@ -14,7 +10,9 @@ public class BloodlossEffectStartedappliedProcedure {
 				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure BloodlossEffectStartedapplied!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
+
 		{
 			Entity _ent = entity;
 			if (!_ent.world.isRemote && _ent.world.getServer() != null) {
@@ -30,4 +28,5 @@ public class BloodlossEffectStartedappliedProcedure {
 			}
 		}
 	}
+
 }

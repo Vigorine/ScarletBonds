@@ -2,36 +2,30 @@ package net.scarletbonds.procedures;
 
 import net.minecraftforge.eventbus.api.Event;
 
-public class BloodlustEffectStartedappliedProcedure {
+public class BloodlossEffectProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure BloodlustEffectStartedapplied!");
+				ScarletBondsMod.LOGGER.warn("Failed to load dependency entity for procedure BloodlossEffect!");
 			return;
 		}
 
 		Entity entity = (Entity) dependencies.get("entity");
 
+		entity.attackEntityFrom(DamageSource.DRYOUT, (float) 75);
 		{
 			Entity _ent = entity;
 			if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 				_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-						"effect give @s minecraft:nausea 999999 50 true");
+						"effect give @s minecraft:wither 10 0 true");
 			}
 		}
 		{
 			Entity _ent = entity;
 			if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 				_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-						"effect give @s minecraft:hunger 999999 7 true");
-			}
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-				_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-						"effect give @s minecraft:weakness 999999 4 true");
+						"effect give @s kimetsunoyaiba:regeneration_inhibition 10 10 true");
 			}
 		}
 	}

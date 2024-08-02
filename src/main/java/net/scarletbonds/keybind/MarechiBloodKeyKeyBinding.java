@@ -22,8 +22,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.Minecraft;
 
+import java.util.stream.Stream;
 import java.util.function.Supplier;
-import java.util.Collections;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
 @ScarletBondsModElements.ModElement.Tag
 public class MarechiBloodKeyKeyBinding extends ScarletBondsModElements.ModElement {
@@ -94,7 +97,10 @@ public class MarechiBloodKeyKeyBinding extends ScarletBondsModElements.ModElemen
 			return;
 		if (type == 0) {
 
-			MarechiBloodActiveProcedure.executeProcedure(Collections.emptyMap());
+			MarechiBloodActiveProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

@@ -76,13 +76,13 @@ public class HunterDemonBuffsProcedure {
 						}
 						return 0;
 					}
-				}.check(entity) < 6) {
+				}.check(entity) < 5) {
 					{
 						Entity _ent = entity;
 						if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 							_ent.world.getServer().getCommandManager().handleCommand(
 									_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-									"effect give @s minecraft:speed 999999 6 true");
+									"effect give @s minecraft:speed 999999 5 true");
 						}
 					}
 				}

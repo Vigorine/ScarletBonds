@@ -1797,6 +1797,39 @@
       "path": "~/Procedures/Slayer_Actives"
     },
     {
+      "name": "MarechiBloodActive",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marechi_blood_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
       "name": "KakushiActive",
       "type": "procedure",
       "sortid": 230,
@@ -2017,7 +2050,7 @@
       "type": "keybind",
       "sortid": 252,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "fighting_spirit_key",
       "path": "~/Keybinds"
     },
@@ -2061,91 +2094,6 @@
       "path": "~/Procedures/Demon_Actives "
     },
     {
-      "name": "MarechiBloodActive",
-      "type": "procedure",
-      "sortid": 256,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "marechi_blood_active",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Slayer_Actives"
-    },
-    {
-      "name": "BloodlustEffectStartedapplied",
-      "type": "procedure",
-      "sortid": 257,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bloodlust_effect_startedapplied",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Slayer_Actives"
-    },
-    {
-      "name": "Bloodlust",
-      "type": "potioneffect",
-      "sortid": 257,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bloodlust",
-      "path": "~/Procedures/Slayer_Actives"
-    },
-    {
-      "name": "BloodlossEffectStartedapplied",
-      "type": "procedure",
-      "sortid": 258,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bloodloss_effect_startedapplied",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Slayer_Actives"
-    },
-    {
-      "name": "Bloodloss",
-      "type": "potioneffect",
-      "sortid": 258,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bloodloss",
-      "path": "~/Procedures/Slayer_Actives"
-    },
-    {
       "name": "MarechiRelease",
       "type": "procedure",
       "sortid": 259,
@@ -2176,6 +2124,92 @@
           }
         ]
       },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "BloodlossEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodloss_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "BloodlustEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodlust_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "BloodlustEffect",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodlust_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Effects"
+    },
+    {
+      "name": "BloodlossEffect",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodloss_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Effects"
+    },
+    {
+      "name": "Bloodlust",
+      "type": "potioneffect",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodlust",
+      "path": "~/Procedures/Slayer_Actives"
+    },
+    {
+      "name": "Bloodloss",
+      "type": "potioneffect",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodloss",
       "path": "~/Procedures/Slayer_Actives"
     }
   ],
@@ -2447,7 +2481,15 @@
         "name": "Procedures",
         "children": [
           {
+            "name": "Slayer_Actives",
+            "children": []
+          },
+          {
             "name": "Demon_Buffs",
+            "children": []
+          },
+          {
+            "name": "Effects",
             "children": []
           },
           {
@@ -2456,10 +2498,6 @@
           },
           {
             "name": "Demon_Actives ",
-            "children": []
-          },
-          {
-            "name": "Slayer_Actives",
             "children": []
           }
         ]
@@ -2502,11 +2540,15 @@
         ]
       },
       {
+        "name": "Potion Effects",
+        "children": []
+      },
+      {
         "name": "Keybinds",
         "children": []
       },
       {
-        "name": "Potion Effects",
+        "name": "Effects",
         "children": []
       }
     ]
