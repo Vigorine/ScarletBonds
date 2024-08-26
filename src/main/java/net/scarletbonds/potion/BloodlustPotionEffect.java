@@ -1,9 +1,27 @@
 
 package net.scarletbonds.potion;
 
+import net.scarletbonds.procedures.BloodlustEffectProcedure;
+
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.potion.EffectType;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effect;
+import net.minecraft.entity.ai.attributes.AttributeModifierManager;
+import net.minecraft.entity.LivingEntity;
+
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BloodlustPotionEffect {
-
 	@ObjectHolder("scarlet_bonds:bloodlust")
 	public static final Effect potion = null;
 
@@ -13,9 +31,8 @@ public class BloodlustPotionEffect {
 	}
 
 	public static class EffectCustom extends Effect {
-
 		public EffectCustom() {
-			super(EffectType.HARMFUL, -3407872);
+			super(EffectType.HARMFUL, -65536);
 			setRegistryName("bloodlust");
 		}
 
@@ -56,7 +73,7 @@ public class BloodlustPotionEffect {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			BloodlustEffectStartedappliedProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+			BloodlustEffectProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
@@ -64,7 +81,5 @@ public class BloodlustPotionEffect {
 		public boolean isReady(int duration, int amplifier) {
 			return true;
 		}
-
 	}
-
 }

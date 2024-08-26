@@ -1,0 +1,30 @@
+{
+  "_fv": 34,
+  "_type": "structure",
+  "definition": {
+    "structure": "superflatwhite2",
+    "randomlyRotateStructure": false,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 1000000,
+    "minCountPerChunk": 10,
+    "maxCountPerChunk": 10,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:BuildersForge"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.BEDROCK"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:WhiteSuperFlat"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

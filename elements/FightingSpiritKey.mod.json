@@ -7,9 +7,6 @@
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
       "name": "FightingSpiritActive"
-    },
-    "onKeyReleased": {
-      "name": "MarechiRelease"
     }
   }
 }

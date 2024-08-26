@@ -2,10 +2,10 @@
   "_fv": 34,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Bloodlust ",
-    "icon": "screenshot_2024-07-31_at_17.36.00.png",
+    "effectName": "Bloodlust",
+    "icon": "bloodlust.png",
     "color": {
-      "value": -3407872,
+      "value": -65536,
       "falpha": 0.0
     },
     "isInstant": false,
@@ -14,7 +14,7 @@
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "onStarted": {
-      "name": "BloodlustEffectStartedapplied"
+      "name": "BloodlustEffect"
     }
   }
 }
