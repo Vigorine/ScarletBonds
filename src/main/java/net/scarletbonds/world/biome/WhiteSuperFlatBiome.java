@@ -32,8 +32,8 @@ public class WhiteSuperFlatBiome extends ScarletBondsModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-3355444).setWaterColor(4159204).setWaterFogColor(329011)
-						.withSkyColor(-3355444).withFoliageColor(10387789).withGrassColor(9470285)
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(4159204).setWaterFogColor(329011)
+						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285)
 						.setMusic(new BackgroundMusicSelector((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 								.getValue(new ResourceLocation("ambient.warped_forest.loop")), 12000, 24000, true))
 						.build();
